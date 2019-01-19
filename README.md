@@ -9,7 +9,7 @@ Introduction
 ------------
 
 This is a collection of projects (bindings, code generator, examples and more) for writing ROS2
-applications for .NET Core and .NET Standard specificly targeted at Unity.
+applications for C# specificly targeted at Unity.
 
 Features
 --------
