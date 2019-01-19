@@ -4,24 +4,45 @@ project(unity_ros2 C)
 
 find_package(ament_cmake REQUIRED)
 
-find_package(rcldotnet_common REQUIRED)
-foreach(_assembly_dep ${rcldotnet_common_ASSEMBLIES_DLL})
-  list(APPEND _assembly_deps_dll "${_assembly_dep}")
-endforeach()
+# -------------------- Utils --------------------------
+# TODO(samaim): move to different file?
+macro(dll_to_unity ros_package)
+  find_package(${ros_package} REQUIRED)
+  foreach(_assembly_dep "${${ros_package}_ASSEMBLIES_DLL}")
+    list(APPEND _assembly_deps_dll "${_assembly_dep}")
+  endforeach()
+endmacro()
 
-find_package(rclcs REQUIRED)
-foreach(_assembly_dep ${rclcs_ASSEMBLIES_DLL})
-  list(APPEND _assembly_deps_dll "${_assembly_dep}")
-endforeach()
+function(add_to_unity)
+  cmake_parse_arguments(
+    PARSED_ARGS
+    ""
+    ""
+    "DEPENDS"
+    ${ARGN}
+  )
+  foreach(DEPEND ${PARSED_ARGS_DEPENDS})
+    dll_to_unity(${DEPEND})
+  endforeach()
 
-find_package(rosidl_generator_cs REQUIRED)
-foreach(_assembly_dep ${rosidl_generator_cs_ASSEMBLIES_DLL})
-  list(APPEND _assembly_deps_dll "${_assembly_dep}")
-endforeach()
+  install(
+    FILES ${_assembly_deps_dll}
+    DESTINATION "${CMAKE_CURRENT_SOURCE_DIR}/Assets/Plugins"
+  )
+endfunction(add_to_unity)
 
-install(
-  FILES ${_assembly_deps_dll}
-  DESTINATION "${CMAKE_CURRENT_SOURCE_DIR}/Assets/Plugins"
+# ------------------------------------------------------
+
+
+# Add additional packages here...
+add_to_unity(
+  DEPENDS
+    rcldotnet_common
+    rclcs
+    rosidl_generator_cs
+    std_msgs
+    geometry_msgs
+    builtin_interfaces
 )
 
 ament_package()
