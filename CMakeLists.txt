@@ -40,9 +40,9 @@ add_to_unity(
     rcldotnet_common
     rclcs
     rosidl_generator_cs
+    builtin_interfaces
     std_msgs
     geometry_msgs
-    builtin_interfaces
 )
 
 ament_package()

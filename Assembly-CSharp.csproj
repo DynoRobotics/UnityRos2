@@ -54,6 +54,7 @@
   </ItemGroup>
   <ItemGroup>
      <Compile Include="Assets\Scripts\BehaviourNode.cs" />
+     <Compile Include="Assets\Scripts\NewBehaviourScript.cs" />
      <Compile Include="Assets\Scripts\ROS2Test.cs" />
  <Reference Include="Unity.TextMeshPro.Editor">
  <HintPath>/home/sam/ros2_dotnet_ws/src/dotnet/unity_ros2/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
@@ -285,12 +286,6 @@
  </Reference>
  <Reference Include="rcldotnet_common">
  <HintPath>/home/sam/ros2_dotnet_ws/src/dotnet/unity_ros2/Assets/Plugins/rcldotnet_common.dll</HintPath>
- </Reference>
- <Reference Include="geometry_msgs_assembly">
- <HintPath>/home/sam/ros2_dotnet_ws/src/dotnet/unity_ros2/Assets/Plugins/geometry_msgs_assembly.dll</HintPath>
- </Reference>
- <Reference Include="rosidl_generator_cs">
- <HintPath>/home/sam/ros2_dotnet_ws/src/dotnet/unity_ros2/Assets/Plugins/rosidl_generator_cs.dll</HintPath>
  </Reference>
  <Reference Include="Unity.Analytics.StandardEvents">
  <HintPath>/home/sam/ros2_dotnet_ws/src/dotnet/unity_ros2/Library/PackageCache/com.unity.analytics@3.2.2/Unity.Analytics.StandardEvents.dll</HintPath>

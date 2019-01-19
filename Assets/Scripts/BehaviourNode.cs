@@ -18,6 +18,13 @@ public class BehaviourNode : MonoBehaviour
 
     void FixedUpdate()
     {
-        rclcs.Rclcs.SpinOnce(node, 0.1);
+        //TODO(samiam): Figure out best timeout?
+        rclcs.Rclcs.SpinOnce(node, 0.001);
+    }
+
+    void OnDestroy()
+    {
+        node.Dispose();
+        rclcs.Rclcs.Shutdown(context);
     }
 }
