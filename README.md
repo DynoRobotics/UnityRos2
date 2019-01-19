@@ -23,7 +23,7 @@ What's missing?
 ---------------
 
 Lots of things!
-- Nested Array types
+- Arrays of nested types
 - Static Arrays
 - Clients and services
 - Actions
