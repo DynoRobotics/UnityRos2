@@ -5,8 +5,8 @@ jobs:
     docker:
       - image: dynorobotics/ros2_mono:latest
     steps:
-      - run: mkdir -p /ros2_dotnet_ws/src
-      - run: cd /ros2_dotnet_ws
+      - run: mkdir -p ros2_dotnet_ws/src
+      - run: cd ros2_dotnet_ws
       - run: wget https://github.com/DynoRobotics/unity_ros2/raw/master/ros2_unity.repos
       - run: vcs import src < ros2_unity.repos
       - run: colcon build
