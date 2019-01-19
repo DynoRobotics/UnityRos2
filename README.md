@@ -54,7 +54,9 @@ cd ~/ros2_unity_ws
 wget https://github.com/DynoRobotics/unity_ros2/raw/master/ros2_unity.repos
 vcs import src < ros2_unity.repos
 colcon build
+source install/setup.bash
 ```
 
 Now you can open this repository as a project in Unity and run the example scene that has a publisher and subscription.
 The repository sould be located at ~/ros2_unity_ws/src/dotnet/unity_ros2 if you followed the instructions above.
+Make sure you open Unity in a shell where you have sourced setup.bash so that the linker can find the C libraries.
