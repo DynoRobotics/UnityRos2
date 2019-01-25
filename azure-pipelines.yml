@@ -11,7 +11,8 @@ strategy:
 steps:
 - script: |
     dir
-    choco install python -y -o -ia "'/qn /norestart ALLUSERS=1 TARGETDIR=D:\Python37'"
+    choco install python3 -y --override --installarguments "'/quiet  InstallAllUsers=1 TargetDir=D:\Python36'"
+    cd D:
     dir
     choco install -y patch
     choco install -y curl
