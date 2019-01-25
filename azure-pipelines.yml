@@ -8,6 +8,7 @@ strategy:
       target_generator: 'Visual Studio 15 2017 Win64'
   maxParallel: 1
 
+steps:
 - script: |
     choco install -y python
     choco install -y patch
