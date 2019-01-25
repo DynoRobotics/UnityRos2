@@ -9,7 +9,7 @@ strategy:
   maxParallel: 1
 
 - script: |
-choco install -y python
+    choco install -y python
     choco install -y patch
     choco install -y curl
     pip install -U vcstool
