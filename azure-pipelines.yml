@@ -27,4 +27,5 @@ steps:
     md \dev\ros2\src
     cd \dev\ros2
     curl -sk https://github.com/DynoRobotics/unity_ros2/raw/master/ros2_unity_win10_standalone.repos -o unity_ros2.repos
+    vcs import src < ros2_unity.repos
   displayName: 'Build with colcon'
