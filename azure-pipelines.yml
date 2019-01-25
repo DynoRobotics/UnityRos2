@@ -10,6 +10,7 @@ strategy:
 
 steps:
 - script: |
+    choco install -y python
     pip install vcstool
     pip install -U catkin_pkg EmPy pyparsing pyyaml colcon-common-extensions setuptools pytest coverage mock
     pip install -U catkin_pkg EmPy git+https://github.com/lark-parser/lark.git@0.7d pyparsing pyyaml
