@@ -23,6 +23,6 @@ steps:
     cd \dev\ros2
     curl -sk https://github.com/DynoRobotics/unity_ros2/raw/master/ros2_unity_win10_standalone.repos -o unity_ros2.repos
     vcs import src < ros2_unity.repos
-    C:\Python37\Scripts\colcon.exe build
+    colcon build
     call install\local_setup.bat
   displayName: 'Build with colcon'
