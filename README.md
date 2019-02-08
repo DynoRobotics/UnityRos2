@@ -29,7 +29,7 @@ Lots of things!
 - Time
 - Documentation
 - More examples
-- Cross-platform support (Windows, Windows IoT Core, UWP) [sould work with minimal modifications, but not tested]
+- Better cross-platform support (Windows IoT Core, UWP, Mac) [sould work with minimal modifications, but not tested]
 - Automatic test runner for CI (C#)
 
 How can I try this out?
