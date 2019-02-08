@@ -52,10 +52,27 @@ mkdir -p ~/ros2_unity_ws/src
 cd ~/ros2_unity_ws
 wget https://github.com/DynoRobotics/unity_ros2/raw/master/ros2_unity.repos
 vcs import src < ros2_unity.repos
-colcon build
+colcon build --merge-install
 source install/setup.bash
 ```
 
 Now you can open this repository as a project in Unity and run the example scene that has a publisher and subscription.
+The repository sould be located at ~/ros2_unity_ws/src/dotnet/unity_ros2 if you followed the instructions above.
+Make sure you open Unity in a shell where you have sourced setup.bash so that the linker can find the C libraries.
+
+Windows
+-----
+
+```
+md \dev\ros2_unity_ws\src
+cd \dev\ros2_unity_ws
+curl -sk https://github.com/DynoRobotics/unity_ros2/raw/master/ros2_unity.repos
+vcs import src < ros2_unity_win10.repos
+call \dev\ros2\install\local_setup.bat
+colcon build --merge-install
+call install\setup.bash
+```
+
+Now you can open this repository as a project in Unity and run the example scene that has a publisher and subscription. Make sure you open Unity in a terminal with everything sourced, or to add inte bin and lib folders from boty workspaces to PATH.
 The repository sould be located at ~/ros2_unity_ws/src/dotnet/unity_ros2 if you followed the instructions above.
 Make sure you open Unity in a shell where you have sourced setup.bash so that the linker can find the C libraries.
