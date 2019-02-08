@@ -74,5 +74,5 @@ call install\setup.bash
 ```
 
 Now you can open this repository as a project in Unity and run the example scene that has a publisher and subscription. Make sure you open Unity in a terminal with everything sourced, or to add inte bin and lib folders from both workspaces to PATH.
-The repository sould be located at ~/ros2_unity_ws/src/dotnet/unity_ros2 if you followed the instructions above.
+The repository sould be located at dev\ros2_unity_ws\src\dotnet\unity_ros2 if you followed the instructions above.
 Make sure you open Unity in a shell where you have sourced setup.bash so that the linker can find the C libraries.
