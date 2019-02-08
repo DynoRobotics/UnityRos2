@@ -37,7 +37,7 @@ How can I try this out?
 
 First of all install the standard ROS2 Crystal Clemmys dependencies for your operating system of choice https://index.ros.org/doc/ros2/Installation/
 
-Next make sure you've installed Mono https://www.mono-project.com/ or .Net Core https://www.microsoft.com/net/learn/get-started
+Next make sure you've installed Mono https://www.mono-project.com/ or .Net Core https://www.microsoft.com/net/learn/get-started. Windows 10 I recommend installing .NET via Visual Studio 2017.
 
 Install Unity
 https://forum.unity.com/threads/unity-hub-v-1-0-0-is-now-available.555547/
@@ -60,8 +60,8 @@ Now you can open this repository as a project in Unity and run the example scene
 The repository sould be located at ~/ros2_unity_ws/src/dotnet/unity_ros2 if you followed the instructions above.
 Make sure you open Unity in a shell where you have sourced setup.bash so that the linker can find the C libraries.
 
-Windows
------
+Windows 10
+----------
 
 ```
 md \dev\ros2_unity_ws\src
