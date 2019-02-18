@@ -18,15 +18,15 @@ The current set of features include:
 - Generation of all builtin ROS types, dynamic arrays and nested types.
 - Support for publishers and subscriptions
 - Tests
+- Time (limited support)
 
 What's missing?
 ---------------
 
 Lots of things!
-- Static Arrays
 - Clients and services
+- Setting individual element of array in message (need to assign complete array atm.)
 - Actions
-- Time
 - Documentation
 - More examples
 - Better cross-platform support (Windows IoT Core, UWP, Mac) [should work with minimal modifications, but not tested]
