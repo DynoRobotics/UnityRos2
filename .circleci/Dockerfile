@@ -1,4 +1,4 @@
-FROM osrf/ros2:nightly
+FROM dynorobotics/ros2:crystal
 ENV LANG en_US.UTF-8
 
 # Mono/C#
