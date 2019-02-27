@@ -8,4 +8,4 @@ jobs:
       - run: mkdir -p ros2_unity_ws/src
       - run: wget https://github.com/DynoRobotics/unity_ros2/raw/master/ros2_unity.repos
       - run: vcs import ros2_unity_ws/src < ros2_unity.repos
-      - run: source $ROS2_WS/install/setup.sh && cd ros2_unity_ws && colcon build
+      - run: source /opt/ros/crystal/setup.sh && cd ros2_unity_ws && colcon build
