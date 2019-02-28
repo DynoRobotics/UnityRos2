@@ -1,4 +1,9 @@
 repositories:
+  ros2/nav2_msgs:
+    type: git
+    url: https://github.com/DynoRobotics/nav2_msgs.git
+    version: master
+
   dontnet/ament_cmake_export_assemblies:
     type: git
     url: https://github.com/DynoRobotics/ament_cmake_export_assemblies.git
@@ -28,6 +33,7 @@ repositories:
     type: git
     url: https://github.com/DynoRobotics/dotnet_cmake_module.git
     version: master
+
 
   # ROS2 dependencies
   ament/ament_cmake:

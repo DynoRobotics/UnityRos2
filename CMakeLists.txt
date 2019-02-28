@@ -34,7 +34,7 @@ endfunction(add_to_unity)
 # ------------------------------------------------------
 
 
-# Add additional packages here...
+# Add additional message packages here:
 add_to_unity(
   DEPENDS
     rcldotnet_common
@@ -43,6 +43,10 @@ add_to_unity(
     builtin_interfaces
     std_msgs
     geometry_msgs
+    sensor_msgs
+    tf2_msgs
+    nav_msgs
+    nav2_msgs
 )
 
 ament_package()
