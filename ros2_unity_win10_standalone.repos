@@ -1,7 +1,7 @@
 repositories:
   dontnet/ament_cmake_export_assemblies:
     type: git
-    url: https://github.com/esteve/ament_cmake_export_assemblies.git
+    url: https://github.com/DynoRobotics/ament_cmake_export_assemblies.git
     version: master
 
   dontnet/unity_ros2:
