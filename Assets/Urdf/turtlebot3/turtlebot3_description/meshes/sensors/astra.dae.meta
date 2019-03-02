@@ -1,0 +1,218 @@
+fileFormatVersion: 2
+guid: 20a6534c096e41445ae6034e9f70b8b7
+ModelImporter:
+  serializedVersion: 23
+  fileIDToRecycleName:
+    100000: ' 02_ncl1_2'
+    100002: ' 02_ncl1_3'
+    100004: -DC_Brep
+    100006: -DC_Brep001
+    100008: -DC_Brep_ncl1_12
+    100010: -DC_Brep_ncl1_13
+    100012: -DC_Brep_ncl1_14
+    100014: -DC_Brep_ncl1_16
+    100016: -DC_Brep_ncl1_20
+    100018: -DC_Brep_ncl1_21
+    100020: -DC_Brep_ncl1_22
+    100022: -DC_Brep_ncl1_23
+    100024: -DC_Brep_ncl1_24
+    100026: -DC_Brep_ncl1_25
+    100028: -DC_Brep_ncl1_26
+    100030: -DC_Brep_ncl1_27
+    100032: -DC_Brep_ncl1_28
+    100034: -DC_Brep_ncl1_29
+    100036: -DC_Brep_ncl1_3
+    100038: -DC_Brep_ncl1_30
+    100040: -DC_Brep_ncl1_4
+    100042: -DC_Brep_ncl1_5
+    100044: -DC_Brep_ncl1_6
+    100046: -DC_Brep_ncl1_7
+    100048: _02
+    100050: _02_ncl1_1
+    100052: _02_ncl1_2
+    100054: _02_ncl1_3
+    100056: _15_ncl1_4
+    100058: //RootNode
+    400000: ' 02_ncl1_2'
+    400002: ' 02_ncl1_3'
+    400004: -DC_Brep
+    400006: -DC_Brep001
+    400008: -DC_Brep_ncl1_12
+    400010: -DC_Brep_ncl1_13
+    400012: -DC_Brep_ncl1_14
+    400014: -DC_Brep_ncl1_16
+    400016: -DC_Brep_ncl1_20
+    400018: -DC_Brep_ncl1_21
+    400020: -DC_Brep_ncl1_22
+    400022: -DC_Brep_ncl1_23
+    400024: -DC_Brep_ncl1_24
+    400026: -DC_Brep_ncl1_25
+    400028: -DC_Brep_ncl1_26
+    400030: -DC_Brep_ncl1_27
+    400032: -DC_Brep_ncl1_28
+    400034: -DC_Brep_ncl1_29
+    400036: -DC_Brep_ncl1_3
+    400038: -DC_Brep_ncl1_30
+    400040: -DC_Brep_ncl1_4
+    400042: -DC_Brep_ncl1_5
+    400044: -DC_Brep_ncl1_6
+    400046: -DC_Brep_ncl1_7
+    400048: _02
+    400050: _02_ncl1_1
+    400052: _02_ncl1_2
+    400054: _02_ncl1_3
+    400056: _15_ncl1_4
+    400058: //RootNode
+    2100000: _01 - Default
+    2300000: -DC_Brep
+    2300002: -DC_Brep001
+    2300004: -DC_Brep_ncl1_12
+    2300006: -DC_Brep_ncl1_13
+    2300008: -DC_Brep_ncl1_14
+    2300010: -DC_Brep_ncl1_16
+    2300012: -DC_Brep_ncl1_20
+    2300014: -DC_Brep_ncl1_21
+    2300016: -DC_Brep_ncl1_22
+    2300018: -DC_Brep_ncl1_23
+    2300020: -DC_Brep_ncl1_24
+    2300022: -DC_Brep_ncl1_25
+    2300024: -DC_Brep_ncl1_26
+    2300026: -DC_Brep_ncl1_27
+    2300028: -DC_Brep_ncl1_28
+    2300030: -DC_Brep_ncl1_29
+    2300032: -DC_Brep_ncl1_3
+    2300034: -DC_Brep_ncl1_30
+    2300036: -DC_Brep_ncl1_4
+    2300038: -DC_Brep_ncl1_5
+    2300040: -DC_Brep_ncl1_6
+    2300042: -DC_Brep_ncl1_7
+    3300000: -DC_Brep
+    3300002: -DC_Brep001
+    3300004: -DC_Brep_ncl1_12
+    3300006: -DC_Brep_ncl1_13
+    3300008: -DC_Brep_ncl1_14
+    3300010: -DC_Brep_ncl1_16
+    3300012: -DC_Brep_ncl1_20
+    3300014: -DC_Brep_ncl1_21
+    3300016: -DC_Brep_ncl1_22
+    3300018: -DC_Brep_ncl1_23
+    3300020: -DC_Brep_ncl1_24
+    3300022: -DC_Brep_ncl1_25
+    3300024: -DC_Brep_ncl1_26
+    3300026: -DC_Brep_ncl1_27
+    3300028: -DC_Brep_ncl1_28
+    3300030: -DC_Brep_ncl1_29
+    3300032: -DC_Brep_ncl1_3
+    3300034: -DC_Brep_ncl1_30
+    3300036: -DC_Brep_ncl1_4
+    3300038: -DC_Brep_ncl1_5
+    3300040: -DC_Brep_ncl1_6
+    3300042: -DC_Brep_ncl1_7
+    4300000: -DC_Brep_ncl1_4
+    4300002: -DC_Brep_ncl1_3
+    4300004: -DC_Brep_ncl1_5
+    4300006: -DC_Brep_ncl1_13
+    4300008: -DC_Brep_ncl1_16
+    4300010: -DC_Brep_ncl1_20
+    4300012: -DC_Brep_ncl1_28
+    4300014: -DC_Brep_ncl1_24
+    4300016: -DC_Brep_ncl1_25
+    4300018: -DC_Brep_ncl1_27
+    4300020: -DC_Brep001
+    4300022: -DC_Brep_ncl1_7
+    4300024: -DC_Brep_ncl1_14
+    4300026: -DC_Brep_ncl1_12
+    4300028: -DC_Brep_ncl1_21
+    4300030: -DC_Brep_ncl1_22
+    4300032: -DC_Brep_ncl1_23
+    4300034: -DC_Brep_ncl1_6
+    4300036: -DC_Brep_ncl1_29
+    4300038: -DC_Brep_ncl1_26
+    4300040: -DC_Brep
+    4300042: -DC_Brep_ncl1_30
+  externalObjects: {}
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 0.0254
+    meshCompression: 0
+    addColliders: 0
+    useSRGBMaterialColor: 1
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 0
+    importLights: 0
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    preserveHierarchy: 0
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+    previousCalculatedGlobalScale: 1
+    hasPreviousCalculatedGlobalScale: 0
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+    legacyComputeAllNormalsFromSmoothingGroupsWhenMeshHasBlendShapes: 0
+    blendShapeNormalImportMode: 1
+    normalSmoothingSource: 0
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 0
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

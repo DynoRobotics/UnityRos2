@@ -32,7 +32,7 @@ public class JointInterface : MonoBehaviour
 
     public Vector3 Axis;
 
-    private HingeJoint rotatingJoint;
+    public HingeJoint rotatingJoint;
     private ConfigurableJoint prismaticJoint;
 
     private float jointPosition; // rad or meters
@@ -49,7 +49,14 @@ public class JointInterface : MonoBehaviour
         }
         set
         {
-            jointPosition = Mathf.Clamp(value, (float)LowerLimit, (float)UpperLimit);
+            if (EnableJointLimits)
+            {
+                jointPosition = Mathf.Clamp(value, (float)LowerLimit, (float)UpperLimit);
+            }
+            else
+            {
+                jointPosition = value;
+            }
         }
     }
 
@@ -76,7 +83,7 @@ public class JointInterface : MonoBehaviour
 
     void Start()
     {
-        //rotatingJoint = GetComponent<HingeJoint>();
+        rotatingJoint = GetComponent<HingeJoint>();
         originalRotation = transform.localRotation;
         originalPosition = transform.localPosition;
     }

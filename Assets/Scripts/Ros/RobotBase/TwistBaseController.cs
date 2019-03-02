@@ -25,6 +25,8 @@ public class TwistBaseController : BehaviourNode
 
     public string TwistTopic = "/cmd_vel";
 
+    public bool IsHolonomic = false;
+
     public float LinearForwardVelocity = 0.0f;
     public float LinearRightVelocity = 0.0f;
     public float AngularVelocity = 0.0f;
@@ -49,8 +51,12 @@ public class TwistBaseController : BehaviourNode
 
     new void FixedUpdate()
     {
-        Vector3 deltaPosition = (BaseRigidbody.transform.forward * LinearForwardVelocity + 
-                                 BaseRigidbody.transform.right * LinearRightVelocity) * Time.fixedDeltaTime;
+        Vector3 deltaPosition = (BaseRigidbody.transform.forward * LinearForwardVelocity) * Time.fixedDeltaTime;
+
+        if (IsHolonomic)
+        {
+           deltaPosition += BaseRigidbody.transform.right * LinearRightVelocity * Time.fixedDeltaTime;
+        }
     
         BaseRigidbody.MovePosition(this.BaseRigidbody.position + deltaPosition);
 

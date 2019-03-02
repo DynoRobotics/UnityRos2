@@ -26,6 +26,8 @@ public class UnityInputTeleop : BehaviourNode
     public float MaxSidewaysVelocity = 0.3f;
     public float MaxAngularVelocity = 1.0f;
 
+    public bool UseHolonomicControls = false;
+
     private Publisher<geometry_msgs.msg.Twist> publisher;
     private geometry_msgs.msg.Twist twistMsg;
 
@@ -40,11 +42,19 @@ public class UnityInputTeleop : BehaviourNode
     void Update()
     {
         var linear = twistMsg.linear;
-        linear.x = Input.GetAxis("Vertical") * MaxForwardVelocity;
-        linear.y = -Input.GetAxis("Horizontal") * MaxSidewaysVelocity;
-
         var angular = twistMsg.angular;
-        angular.z = -Input.GetAxis("Strafing") * MaxAngularVelocity;
+
+        linear.x = Input.GetAxis("Vertical") * MaxForwardVelocity;
+
+        if (UseHolonomicControls)
+        {
+            linear.y = -Input.GetAxis("Horizontal") * MaxSidewaysVelocity;
+            angular.z = -Input.GetAxis("Turning") * MaxAngularVelocity;
+        }
+        else
+        {
+            angular.z = -Input.GetAxis("Horizontal") * MaxAngularVelocity;
+        }
 
         if (angular.z != 0.0f || linear.x != 0.0f || linear.y != 0.0f)
         {
