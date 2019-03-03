@@ -11,7 +11,7 @@ environment:
   PYTHON3: "c:\\Python37"
   PYTHON2: "c:\\Python27"
   
-clone_folder: c:\proj\ros2-web-bridge
+clone_folder: c:\proj\unity_ros2
 
 before_build:
   - cd c:\
@@ -33,7 +33,7 @@ before_build:
   - "SET PATH=%PYTHON3%;%PYTHON3%\\bin;%PYTHON3%\\Scripts;%PATH%"
   - python -m pip install -U catkin_pkg empy pyparsing pyyaml setuptools colcon-common-extensions pip
   - md src
-  - vcs import src < ros2_unity_win10_standalone.repos
+  - vcs import src < unity_ros2\ros2_unity_win10_standalone.repos
 
 build_script:
   - cmd: call "C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\Common7\Tools\VsDevCmd.bat"
