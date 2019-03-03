@@ -1,8 +1,4 @@
 repositories:
-  ros2/geometry2:
-    type: git
-    url: https://github.com/ros2/geometry2.git
-    version: ros2
 
   ros2/nav2_msgs:
     type: git
@@ -20,7 +16,7 @@ repositories:
     version: master
 
   dontnet/rcldotnet_common:
-    type: git
+    oype: git
     url: https://github.com/DynoRobotics/rcldotnet_common.git
     version: master
 
@@ -38,7 +34,6 @@ repositories:
     type: git
     url: https://github.com/DynoRobotics/dotnet_cmake_module.git
     version: master
-
 
   # ROS2 dependencies
   ament/ament_cmake:
@@ -61,6 +56,10 @@ repositories:
     type: git
     url: https://github.com/ament/googletest.git
     version: c8b6f2be853002b9a0abfb30ea537402383bf1f4
+  ament/osrf_pycommon:
+    type: git
+    url: https://github.com/osrf/osrf_pycommon.git
+    version: 0.1.6
   ament/uncrustify_vendor:
     type: git
     url: https://github.com/ament/uncrustify_vendor.git
@@ -73,10 +72,6 @@ repositories:
     type: git
     url: https://github.com/eProsima/Fast-RTPS.git
     version: b48ce9d2fba6fc94e756da01c58b72f2ad848238
-  osrf/osrf_pycommon:
-    type: git
-    url: https://github.com/osrf/osrf_pycommon.git
-    version: master
   osrf/osrf_testing_tools_cpp:
     type: git
     url: https://github.com/osrf/osrf_testing_tools_cpp.git
@@ -101,10 +96,6 @@ repositories:
     type: git
     url: https://github.com/ros/urdfdom_headers.git
     version: 1.0.2
-  ros-planning/navigation_msgs:
-    type: git
-    url: https://github.com/ros-planning/navigation_msgs.git
-    version: 2.0.0
   ros2/ament_cmake_ros:
     type: git
     url: https://github.com/ros2/ament_cmake_ros.git
@@ -121,6 +112,14 @@ repositories:
     type: git
     url: https://github.com/ros2/example_interfaces.git
     version: 0.6.2
+  ros2/geometry2:
+    type: git
+    url: https://github.com/ros2/geometry2.git
+    version: 0.10.1
+  ros2/kdl_parser:
+    type: git
+    url: https://github.com/ros2/kdl_parser.git
+    version: 2.2.0
   ros2/launch:
     type: git
     url: https://github.com/ros2/launch.git
@@ -129,6 +128,14 @@ repositories:
     type: git
     url: https://github.com/ros2/libyaml_vendor.git
     version: 1.0.0
+  ros2/message_filters:
+    type: git
+    url: https://github.com/ros2/message_filters.git
+    version: 3.0.0
+  ros2/orocos_kinematics_dynamics:
+    type: git
+    url: https://github.com/ros2/orocos_kinematics_dynamics.git
+    version: 3.1.0
   ros2/poco_vendor:
     type: git
     url: https://github.com/ros2/poco_vendor.git
@@ -185,6 +192,14 @@ repositories:
     type: git
     url: https://github.com/ros2/rmw_opensplice.git
     version: 0.6.3
+  ros2/robot_state_publisher:
+    type: git
+    url: https://github.com/ros2/robot_state_publisher.git
+    version: 2.1.0
+  ros2/ros1_bridge:
+    type: git
+    url: https://github.com/ros2/ros1_bridge.git
+    version: 0.6.1
   ros2/ros2cli:
     type: git
     url: https://github.com/ros2/ros2cli.git
@@ -220,6 +235,10 @@ repositories:
   ros2/rosidl_typesupport_opensplice:
     type: git
     url: https://github.com/ros2/rosidl_typesupport_opensplice.git
+    version: 0.6.2
+  ros2/sros2:
+    type: git
+    url: https://github.com/ros2/sros2.git
     version: 0.6.2
   ros2/system_tests:
     type: git
