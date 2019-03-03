@@ -41,8 +41,6 @@ public class NavigationMissionPublisher : BehaviourNode
 
     public void PublishMission()
     {
-        Debug.Log("publishing mission");
-
         string missionPlan =
 @"<root main_tree_to_execute=""MainTree"">
   <BehaviorTree ID = ""MainTree"">

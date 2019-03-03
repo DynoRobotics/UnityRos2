@@ -67,6 +67,12 @@ namespace rclcs
             rosTransform.rotation.Unity2Ros(unityTransform.rotation);
         }
 
+        public static void LocalUnity2Ros(this geometry_msgs.msg.Transform rosTransform, Transform unityTransform)
+        {
+            rosTransform.translation.Unity2Ros(unityTransform.localPosition);
+            rosTransform.rotation.Unity2Ros(unityTransform.localRotation);
+        }
+
         public static void Unity2Ros(this geometry_msgs.msg.Vector3 rosVector3Msg, Vector3 unityVector3)
         {
             Vector3 rosVector3 = unityVector3.Unity2Ros();

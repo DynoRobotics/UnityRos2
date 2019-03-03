@@ -27,6 +27,8 @@ public class PoseWithCovarianceStampedPublisher : BehaviourNode
 
     public string TopicName = "/pose_with_covariance_stamped";
 
+    public bool UseLocalTransform = true;
+
     private List<double> poseCovarianceDiagonal = new List<double> { 0.001d, 0.001d, 0.001d, 0.001d, 0.001d, 0.03d };
 
     private rclcs.Publisher<geometry_msgs.msg.PoseWithCovarianceStamped> publisher;
@@ -45,7 +47,14 @@ public class PoseWithCovarianceStampedPublisher : BehaviourNode
     void Update()
     {
         poseWithCovarianceStampedMessage.header.Update(clock);
-        poseWithCovarianceStampedMessage.pose.pose.Unity2Ros(transform);
+        if (UseLocalTransform)
+        {
+            poseWithCovarianceStampedMessage.pose.pose.LocalUnity2Ros(transform);
+        }
+        else
+        {
+            poseWithCovarianceStampedMessage.pose.pose.Unity2Ros(transform);
+        }
          
         publisher.Publish(poseWithCovarianceStampedMessage);
     }
