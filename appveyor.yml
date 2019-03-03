@@ -35,14 +35,11 @@ before_build:
 
 build_script:
   - cd  c:\proj\unity_ros2
-  - ps: Install-Product node $env:nodejs_version x64
   - call c:\ros2-windows\local_setup.bat
   - "SET PATH=%PYTHON2%;%PYTHON2%\\bin;%PYTHON2%\\Scripts;%PATH%"
-  - node --version
-  - npm --version
   - python --version
-  - npm install
-  - npm run lint
+  - colcon build
+
 
 test_script:
   - cmd: call "C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\Common7\Tools\VsDevCmd.bat"
