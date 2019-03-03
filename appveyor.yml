@@ -32,12 +32,12 @@ before_build:
   - refreshenv
   - "SET PATH=%PYTHON3%;%PYTHON3%\\bin;%PYTHON3%\\Scripts;%PATH%"
   - python -m pip install -U catkin_pkg empy pyparsing pyyaml setuptools colcon-common-extensions pip
-  - md src
-  - vcs import src < unity_ros2\ros2_unity_win10_standalone.repos
+  - md unity_ws\src
+  - vcs import unity_ws\src < unity_ros2\ros2_unity_win10_standalone.repos
 
 build_script:
   - cmd: call "C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\Common7\Tools\VsDevCmd.bat"
-  - cd  c:\proj\unity_ros2
+  - cd  c:\proj\unity_ws
   - call c:\ros2-windows\local_setup.bat
   - "SET PATH=%PYTHON2%;%PYTHON2%\\bin;%PYTHON2%\\Scripts;%PATH%"
   - python --version
