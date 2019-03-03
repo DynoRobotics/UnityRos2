@@ -34,14 +34,11 @@ before_build:
   - python -m pip install -U catkin_pkg empy pyparsing pyyaml setuptools colcon-common-extensions pip
 
 build_script:
+  - cmd: call "C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\Common7\Tools\VsDevCmd.bat"
+  - vcs import c:\proj < ros2_unity_win10_standalone.repos
   - cd  c:\proj\unity_ros2
   - call c:\ros2-windows\local_setup.bat
   - "SET PATH=%PYTHON2%;%PYTHON2%\\bin;%PYTHON2%\\Scripts;%PATH%"
   - python --version
   - colcon build
 
-
-test_script:
-  - cmd: call "C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\Common7\Tools\VsDevCmd.bat"
-  - "SET PATH=%PYTHON3%;%PYTHON3%\\bin;%PYTHON3%\\Scripts;%PATH%"
-  - npm run ci
