@@ -40,7 +40,7 @@ build_script:
   - cmd: call "C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\Common7\Tools\VsDevCmd.bat"
   - cd  c:\proj\unity_ws
   - call c:\ros2-windows\local_setup.bat
-  - "SET PATH=%PYTHON2%;%PYTHON2%\\bin;%PYTHON2%\\Scripts;%PATH%"
+  - "SET PATH=%PYTHON3%;%PYTHON3%\\bin;%PYTHON3%\\Scripts;%PATH%"
   - python --version
   - colcon build
 
