@@ -7,9 +7,7 @@ branches:
 image: Visual Studio 2017
 
 environment:
-  nodejs_version: "8"
   PYTHON3: "c:\\Python37"
-  PYTHON2: "c:\\Python27"
   
 clone_folder: c:\proj\unity_ros2
 
@@ -30,8 +28,8 @@ before_build:
   - setx AMENT_PYTHON_EXECUTABLE "c:\Python37"
   - refreshenv
   - "SET PATH=%PYTHON3%;%PYTHON3%\\bin;%PYTHON3%\\Scripts;%PATH%"
-  - python3 -m pip install -U catkin_pkg EmPy pyparsing pyyaml setuptools colcon-common-extensions pip vcstool git+https://github.com/lark-parser/lark.git@0.7d
-  - python3 -m pip install -U pytest coverage mock flake8 flake8-blind-except flake8-builtins flake8-class-newline flake8-comprehensions flake8-deprecated flake8-docstrings flake8-import-order flake8-quotes pep8 pydocstyle
+  - python -m pip install -U catkin_pkg EmPy pyparsing pyyaml setuptools colcon-common-extensions pip vcstool git+https://github.com/lark-parser/lark.git@0.7d
+  - python -m pip install -U pytest coverage mock flake8 flake8-blind-except flake8-builtins flake8-class-newline flake8-comprehensions flake8-deprecated flake8-docstrings flake8-import-order flake8-quotes pep8 pydocstyle
   - cd c:\proj
   - md unity_ws\src
   - vcs import unity_ws\src < unity_ros2\ros2_unity_win10_standalone.repos
