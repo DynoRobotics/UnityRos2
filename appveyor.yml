@@ -24,12 +24,14 @@ before_build:
   - appveyor DownloadFile https://github.com/ros2/choco-packages/releases/download/2017-04-04-1/tinyxml-usestl.2.6.2.nupkg
   - appveyor DownloadFile https://github.com/ros2/choco-packages/releases/download/2018-06-12-1/tinyxml2.6.0.0.nupkg
   - choco install -y -s c:\download\ asio eigen tinyxml-usestl tinyxml2
+  - choco install -y patch curl cppcheck
   - setx -m OPENSSL_CONF C:\OpenSSL-Win64\bin\openssl.cfg
   - set PATH=C:\OpenSSL-Win64\bin;%PATH%
   - setx AMENT_PYTHON_EXECUTABLE "c:\Python37"
   - refreshenv
   - "SET PATH=%PYTHON3%;%PYTHON3%\\bin;%PYTHON3%\\Scripts;%PATH%"
-  - python -m pip install -U catkin_pkg empy pyparsing pyyaml setuptools colcon-common-extensions pip vcstool
+  - python3 -m pip install -U catkin_pkg EmPy pyparsing pyyaml setuptools colcon-common-extensions pip vcstool git+https://github.com/lark-parser/lark.git@0.7d
+  - python3 -m pip install -U pytest coverage mock flake8 flake8-blind-except flake8-builtins flake8-class-newline flake8-comprehensions flake8-deprecated flake8-docstrings flake8-import-order flake8-quotes pep8 pydocstyle
   - cd c:\proj
   - md unity_ws\src
   - vcs import unity_ws\src < unity_ros2\ros2_unity_win10_standalone.repos
