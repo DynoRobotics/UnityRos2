@@ -10,6 +10,8 @@ environment:
   nodejs_version: "8"
   PYTHON3: "c:\\Python37"
   PYTHON2: "c:\\Python27"
+  
+clone_folder: c:\proj\ros2-web-bridge
 
 before_build:
   - cd c:\
@@ -30,8 +32,8 @@ before_build:
   - refreshenv
   - "SET PATH=%PYTHON3%;%PYTHON3%\\bin;%PYTHON3%\\Scripts;%PATH%"
   - python -m pip install -U catkin_pkg empy pyparsing pyyaml setuptools colcon-common-extensions pip
-  - md c:\proj\src
-  - vcs import c:\proj\src < ros2_unity_win10_standalone.repos
+  - md src
+  - vcs import src < ros2_unity_win10_standalone.repos
 
 build_script:
   - cmd: call "C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\Common7\Tools\VsDevCmd.bat"
