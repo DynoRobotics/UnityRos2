@@ -29,6 +29,7 @@ The current set of features include:
 - Sending nav goals
 - Sending navigation missions
 - Path visualizer
+- Keyboard teleop
 - and more...
 
 
