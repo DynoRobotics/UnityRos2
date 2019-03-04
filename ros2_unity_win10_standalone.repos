@@ -1,5 +1,4 @@
 repositories:
-
   ros2/nav2_msgs:
     type: git
     url: https://github.com/DynoRobotics/nav2_msgs.git
