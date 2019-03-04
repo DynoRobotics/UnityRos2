@@ -28,6 +28,7 @@ The current set of features include:
 - Navigation2 support
 - Sending nav goals
 - Sending navigation missions
+- Path visualizer
 - and more...
 
 
