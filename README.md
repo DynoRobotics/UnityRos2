@@ -1,9 +1,7 @@
 ROS2 for Unity
 ==============
 
-Build status
-------------
-[![CircleCI](https://circleci.com/gh/DynoRobotics/unity_ros2/tree/master.svg?style=svg)](https://circleci.com/gh/DynoRobotics/unity_ros2/tree/master)
+![Turtebot3 Navigation2](https://i.gyazo.com/f96219e44f2e06bf6bfa4180ce59f6fa.gif)
 
 Introduction
 ------------
@@ -76,3 +74,9 @@ call install\setup.bash
 Now you can open this repository as a project in Unity and run the example scene that has a publisher and subscription. Make sure you open Unity in a terminal with everything sourced, or to add inte bin and lib folders from both workspaces to PATH.
 The repository sould be located at dev\ros2_unity_ws\src\dotnet\unity_ros2 if you followed the instructions above.
 Make sure you open Unity in a shell where you have sourced setup.bash so that the linker can find the C libraries.
+
+Example Applications
+--------------------
+[![Sweepbot](https://img.youtube.com/vi/eMKbbEQhBTg/0.jpg)](https://www.youtube.com/watch?v=eMKbbEQhBTg)
+[![Package DropOff](https://img.youtube.com/vi/2is7kwPeydA/0.jpg)](https://www.youtube.com/watch?v=2is7kwPeydA)
+
