@@ -17,6 +17,19 @@ The current set of features include:
 - Support for publishers and subscriptions
 - Tests
 - Time (limited support)
+- Laser scan
+- Tf publisher
+- Tf subscriber/visualizer
+- Odometry
+- Base controller
+- Joint controller interface
+- Joint state publiser
+- Distance sensor
+- Navigation2 support
+- Sending nav goals
+- Sending navigation missions
+- and more...
+
 
 What's missing?
 ---------------
