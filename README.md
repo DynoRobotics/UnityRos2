@@ -54,6 +54,7 @@ Next make sure you've installed Mono https://www.mono-project.com/ or .Net Core 
 
 Install Unity
 https://forum.unity.com/threads/unity-hub-v-1-0-0-is-now-available.555547/
+Tested with Unity 2018.3.6f1
 
 The following steps show how to build the example Unity/ROS2 project on Linux:
 
