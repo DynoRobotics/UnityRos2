@@ -17,6 +17,21 @@ The current set of features include:
 - Support for publishers and subscriptions
 - Tests
 - Time (limited support)
+- Laser scan
+- Tf publisher
+- Tf subscriber/visualizer
+- Odometry
+- Base controller
+- Joint controller interface
+- Joint state publiser
+- Distance sensor
+- Navigation2 support
+- Sending nav goals
+- Sending navigation missions
+- Path visualizer
+- Keyboard teleop
+- and more...
+
 
 What's missing?
 ---------------
@@ -35,10 +50,12 @@ How can I try this out?
 
 First of all install the standard ROS2 Crystal Clemmys dependencies for your operating system of choice https://index.ros.org/doc/ros2/Installation/
 
-Next make sure you've installed Mono https://www.mono-project.com/ or .Net Core https://www.microsoft.com/net/learn/get-started. On Windows 10 I recommend installing .NET via Visual Studio 2017.
+Next make sure you've installed .Net Core https://www.microsoft.com/net/learn/get-started. On Windows 10 I recommend installing .NET via Visual Studio 2017.
 
 Install Unity
 https://forum.unity.com/threads/unity-hub-v-1-0-0-is-now-available.555547/
+
+*NOTE: Tested with Unity 2018.3.6f1*
 
 The following steps show how to build the example Unity/ROS2 project on Linux:
 
@@ -74,6 +91,10 @@ call install\setup.bash
 Now you can open this repository as a project in Unity and run the example scene that has a publisher and subscription. Make sure you open Unity in a terminal with everything sourced, or to add inte bin and lib folders from both workspaces to PATH.
 The repository sould be located at dev\ros2_unity_ws\src\dotnet\unity_ros2 if you followed the instructions above.
 Make sure you open Unity in a shell where you have sourced setup.bash so that the linker can find the C libraries.
+
+Tutorials
+---------
+Coming soon!
 
 Example Applications
 --------------------
