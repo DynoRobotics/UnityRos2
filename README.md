@@ -15,6 +15,7 @@ Features
 The current set of features include:
 - Generation of all builtin ROS types, dynamic arrays and nested types.
 - Support for publishers and subscriptions
+- Quality of service profiles
 - Time (limited support)
 - Importing robots from urdf
 - Laser scan
