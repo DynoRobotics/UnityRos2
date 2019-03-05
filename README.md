@@ -9,6 +9,10 @@ Introduction
 This is a collection of projects (bindings, code generator, examples and more) for writing ROS2
 applications for C# specificly targeted at Unity.
 
+Platform support
+----------------
+This project curretly supports Windows 10 and Ubunty 16.04. It sould be possible to get it working on other systems as well.
+
 Features
 --------
 
@@ -39,7 +43,7 @@ The current set of features include:
 What's missing?
 ---------------
 
-Lots of things!
+Plenty of stuff!
 - Clients and services
 - Setting individual element of array in message (need to assign complete array atm.)
 - Actions
