@@ -19,6 +19,7 @@ The current set of features include:
 - Time (limited support)
 - Laser scan
 - Tf publisher
+- Pose publisher
 - Tf subscriber/visualizer
 - Odometry
 - Base controller
