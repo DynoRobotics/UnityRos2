@@ -11,7 +11,7 @@ applications for C# specificly targeted at Unity.
 
 Platform support
 ----------------
-This project curretly supports Windows 10 and Ubuntu 16.04. It sould be possible to get it working on other systems as well.
+This project curretly supports Windows 10 and Ubuntu 16.04. It should be possible to get it working on other systems as well.
 
 Features
 --------
