@@ -21,7 +21,7 @@ The current set of features include:
 - Tf publisher
 - Pose publisher
 - Tf subscriber/visualizer
-- Odometry
+- Odometry (ground truth, no noise yet)
 - Base controller
 - Joint controller interface (only position so far)
 - Joint state publiser
