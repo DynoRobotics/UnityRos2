@@ -44,6 +44,11 @@ Lots of things!
 - More examples
 - Better cross-platform support (Windows IoT Core, UWP, Mac) [should work with minimal modifications, but not tested]
 - Automatic test runner for CI (C#)
+- Costmap visualizer
+- Camera sensor
+- 3d sensor
+- Pointcloud visualizer
+- Video visualiszer
 
 How can I try this out?
 -------------------------------------
