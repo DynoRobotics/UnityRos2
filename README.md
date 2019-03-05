@@ -15,7 +15,6 @@ Features
 The current set of features include:
 - Generation of all builtin ROS types, dynamic arrays and nested types.
 - Support for publishers and subscriptions
-- Tests
 - Time (limited support)
 - Laser scan
 - Tf publisher
@@ -31,6 +30,7 @@ The current set of features include:
 - Sending navigation missions
 - Path visualizer
 - Keyboard teleop
+- Tests
 - and more...
 
 
