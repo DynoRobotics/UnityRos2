@@ -52,6 +52,7 @@ Lots of things!
 - 3d sensor
 - Pointcloud visualizer
 - Video visualiszer
+- Hololens support
 
 How can I try this out?
 -------------------------------------
