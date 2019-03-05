@@ -23,7 +23,7 @@ The current set of features include:
 - Tf subscriber/visualizer
 - Odometry
 - Base controller
-- Joint controller interface
+- Joint controller interface (only position so far)
 - Joint state publiser
 - Distance sensor
 - Navigation2 support
