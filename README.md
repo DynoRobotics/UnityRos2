@@ -1,7 +1,7 @@
 Unity for ROS2
 ==============
 
-![Turtebot3 Navigation2](https://i.gyazo.com/f96219e44f2e06bf6bfa4180ce59f6fa.gif)
+![Turtebot3 Navigation2](https://i.gyazo.com/98d3d43aae3877593ecaefe4e5ba9a44.gif)
 
 Introduction
 ------------
