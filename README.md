@@ -94,7 +94,7 @@ Windows 10
 ```
 md \dev\ros2_unity_ws\src
 cd \dev\ros2_unity_ws
-curl -sk https://github.com/DynoRobotics/unity_ros2/raw/master/ros2_unity.repos
+curl -sk https://github.com/DynoRobotics/unity_ros2/raw/master/ros2_unity.repos -o ros2_unity.repos
 vcs import src < ros2_unity_win10.repos
 call \dev\ros2\install\local_setup.bat
 colcon build --merge-install
