@@ -13,7 +13,6 @@ Tutorial: Turtlebot3 Demo Scene
 
     * Unity3d 2018.3.6f1 (other versions could also work)
     * Docker and docker-compose
-    * Git
     * Curl (or wget for Linux)
     * unity_ros2 for your platform. Follow the instructions at `unity_ros2`_.
 
