@@ -7,4 +7,6 @@ Contents:
 
 .. toctree::
    :maxdepth: 2
-   :caption: Guide
+   :caption: Tutorials
+
+   turtlebot3-navigation2
