@@ -19,7 +19,7 @@ Tutorial: Turtlebot3 Demo Scene
 
 The goal of this tutorial is to get the turtlebot3 sample scene up and running and to explore some of the features in unity_ros2.
 
-The tutorial assumes that you have installed `unity_ros2`_ by downloading and extracting the prebuilt to :code:`C:\dev\standalone_unity_ws`. It also assumes that you are running everything on Windows 10. Modify terminal commands as appropriate if you are using Linux or a different installation path.
+The tutorial assumes that you have installed `unity_ros2`_ by downloading and extracting the prebuilt workspace to :code:`C:\dev\standalone_unity_ws`. It also assumes that you are running everything on Windows 10. Modify terminal commands as appropriate if you are using Linux or a different installation path.
 
 Running the Unity project
 ^^^^^^^^^^^^^^^^^^^^^^^^^
