@@ -121,7 +121,7 @@ The first time you run ``docker-compose up`` the image should be pulled automati
    :align: center
    :figclass: align-centered
 
-You should eventually see something like the image above in the terminal window.
+You should eventually see something like the above in the terminal window.
 
 .. note::
     Sending navigation goals to ``/move_base_simple/goal`` before you see the line ``[]: Looping due to no latching at the moment`` could prevent navigation form working at the moment of writing. Could be fixed by the time you read this...
