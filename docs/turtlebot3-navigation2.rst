@@ -36,7 +36,7 @@ Before you open Unity you need to source the ROS2 workspace. The reason for this
 
     call \dev\standalone_unity_ws\install\setup.bat
 
-.. _Unity Hub: https://unity3d.com/get-unity/download
+.. _Unity Hub: https://forum.unity.com/threads/unity-hub-v-1-5-0-is-now-available.627847/
 
 The next step is to start Unity. We need to do this in the same terminal where we sourced the ROS2 workspace.
 I recommend using `Unity Hub`_ to allow easy switching between versions of Unity.
