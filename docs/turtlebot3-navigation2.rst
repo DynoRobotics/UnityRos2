@@ -18,7 +18,7 @@ Tutorial: Turtlebot3 Demo Scene
 
 The goal of this tutorial is to get the turtlebot3 sample scene up and running and to explore some of the features in unity_ros2.
 
-The tutorial assumes that you have installed `unity_ros2`_ by downloading and extracting the prebuilt workspace to :code:`C:\dev\standalone_unity_ws`. It also assumes that you are running everything on Windows 10. Modify terminal commands as appropriate if you are using Linux or a different installation path.
+The tutorial assumes that you have installed `unity_ros2`_ by downloading and extracting the prebuilt workspace to :code:`C:\dev\standalone_unity_ws` on Windows 10 or ~\standalone_unity_ws on Linux.
 
 Running the Unity project
 ^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -32,19 +32,34 @@ Before you open Unity you need to source the ROS2 workspace. The reason for this
     to copy over the DLL or .so files to the build directory for the Unity project.
     The instructions at `ros2_dotnet`_ could be helpful for the latest option.
 
+Windows 10
+""""""""""
 .. code-block:: console
 
     call \dev\standalone_unity_ws\install\setup.bat
+Linux
+"""""
+.. code-block:: console
+
+    source ~\standalone_unity_ws\install\setup.bat
 
 .. _Unity Hub: https://forum.unity.com/threads/unity-hub-v-1-5-0-is-now-available.627847/
-
 The next step is to start Unity. We need to do this in the same terminal where we sourced the ROS2 workspace.
 I recommend using `Unity Hub`_ to allow easy switching between versions of Unity.
-Copy the shortcut to UnityHub to ``C:\dev\UnityHub.lnk`` before writing the following in the terminal:
 
+Windows 10
+""""""""""
+Copy the shortcut to UnityHub to ``C:\dev\UnityHub.lnk`` before writing the following in the terminal:
 .. code-block:: console
 
     \dev\UnityHub.lnk
+   
+Linux
+"""""
+Assuming you have downloaded the UnityHubSetup.AppImage file to ~/Unity run the following in the terminal:
+.. code-block:: console
+
+    ~/Unity/UnityHubSetup.AppImage
 
 .. figure:: /_static/UnityHub.png
    :width: 100%
