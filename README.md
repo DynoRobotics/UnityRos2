@@ -74,6 +74,15 @@ The following steps show how to build the example Unity/ROS2 project on Linux:
 
 Linux
 -----
+### Using the prebuilt workspace
+
+Download the latest archive for linux from the releases page.
+Let’s assume that it ends up at `~/Downloads/unity-ros2-ws-0.0.1-linux-xenial-amd64.tar.bz2`
+
+```
+cd ~
+tar xf ~/Downloads/unity-ros2-ws-0.0.1-linux-xenial-amd64.tar.bz2
+```
 
 ```
 mkdir -p ~/ros2_unity_ws/src
