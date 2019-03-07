@@ -84,6 +84,17 @@ cd ~
 tar xf ~/Downloads/unity-ros2-ws-0.0.1-linux-xenial-amd64.tar.bz2
 ```
 
+It may be neccesary to install some additional dependencies if you have not used ROS2 on your system before.
+```
+sudo apt install -y python-rosdep
+rosdep init
+rosdep update
+
+rosdep install --from-paths unity_ros2_ws/install/share --ignore-src --rosdistro crystal -y --skip-keys "console_bridge fastcdr fastrtps libopensplice67 libopensplice69 osrf_testing_tools_cpp poco_vendor rmw_connext_cpp rosidl_typesupport_connext_c rosidl_typesupport_connext_cpp rti-connext-dds-5.3.1 tinyxml_vendor tinyxml2_vendor urdfdom urdfdom_headers"
+```
+
+### Building from source
+
 ```
 mkdir -p ~/ros2_unity_ws/src
 cd ~/ros2_unity_ws
