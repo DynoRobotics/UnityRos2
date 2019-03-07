@@ -117,12 +117,24 @@ Running navigation2 for turtlebot3
 The easiest way (in my opinion...) to test the navigation2 stack with turtlebot3 and unity_ros2 is to use our precompiled docker image from DockerHub.
 Start by downloading the docker-compose file:
 
+Windows 10
+""""""""""
 .. code-block:: console
 
     md \dev\turtlebot3_docker
     cd \dev\turtlebot3_docker
     curl -sk https://raw.githubusercontent.com/DynoRobotics/turtlebot3_unity/master/docker-compose.yaml -o docker-compose.yaml
     docker-compose up
+    
+Linux
+"""""
+.. code-block:: console
+
+    mkdir ~/turtlebot3_docker
+    cd ~/turtlebot3_docker
+    wget https://raw.githubusercontent.com/DynoRobotics/turtlebot3_unity/master/docker-compose.yaml
+    docker-compose up
+
 
 .. figure:: /_static/turtlebot3-compose-pull.gif
    :width: 100%
