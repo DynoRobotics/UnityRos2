@@ -66,7 +66,7 @@ First of all install the standard ROS2 Crystal Clemmys dependencies for your ope
 Next make sure you've installed .Net Core https://www.microsoft.com/net/learn/get-started. On Windows 10 I recommend installing .NET via Visual Studio 2017.
 
 Install Unity
-https://forum.unity.com/threads/unity-hub-v-1-0-0-is-now-available.555547/
+https://forum.unity.com/threads/unity-hub-v-1-5-0-is-now-available.627847/
 
 *NOTE: Tested with Unity 2018.3.6f1*
 
