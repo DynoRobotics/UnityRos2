@@ -76,7 +76,7 @@ Linux
 -----
 ### Using the prebuilt workspace
 
-Download the latest archive for linux from https://github.com/DynoRobotics/unity_ros2/releases
+Download the latest archive for linux from [releases](https://github.com/DynoRobotics/unity_ros2/releases) 
 Let’s assume that it ends up at `~/Downloads/standalone-unity-ws-0.0.1-beta-linux-xenial-amd64.tar.bz2`
 
 ```
@@ -102,7 +102,7 @@ Make sure you open Unity in a shell where you have sourced setup.bash so that th
 Windows 10
 ----------
 ### Using the prebuilt workspace
-Download the latest zip file for windows from https://github.com/DynoRobotics/unity_ros2/releases
+Download the latest zip file for windows from [releases](https://github.com/DynoRobotics/unity_ros2/releases) 
 Extract all to \dev\standalone_unity_ws
 ```
 call \dev\standalone_unity_ws\install\local_setup.bat
