@@ -77,11 +77,11 @@ Linux
 ### Using the prebuilt workspace
 
 Download the latest archive for linux from https://github.com/DynoRobotics/unity_ros2/releases
-Let’s assume that it ends up at `~/Downloads/standalone-unity-ros2-ws-0.0.1-beta-linux-xenial-amd64.tar.bz2`
+Let’s assume that it ends up at `~/Downloads/standalone-unity-ws-0.0.1-beta-linux-xenial-amd64.tar.bz2`
 
 ```
 cd ~
-tar xf ~/Downloads/standalone-unity-ros2-ws-0.0.1-beta-linux-xenial-amd64.tar.bz2
+tar xf ~/Downloads/standalone-unity-ws-0.0.1-beta-linux-xenial-amd64.tar.bz2
 ```
 
 ### Building from source
