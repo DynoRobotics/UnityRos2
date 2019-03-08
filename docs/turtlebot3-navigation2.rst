@@ -41,7 +41,7 @@ Linux
 """""
 .. code-block:: console
 
-    source ~\standalone_unity_ws\install\setup.bat
+    source ~\unity_ros2_ws\install\setup.bat
 
 .. _Unity Hub: https://forum.unity.com/threads/unity-hub-v-1-5-0-is-now-available.627847/
 The next step is to start Unity. We need to do this in the same terminal where we sourced the ROS2 workspace.
