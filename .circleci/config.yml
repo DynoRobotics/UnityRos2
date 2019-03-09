@@ -3,7 +3,7 @@ version: 2.1
 jobs:
   build:
     docker:
-      - image: dynorobotics/ros2_mono:latest
+      - image: dynorobotics/ros2_dotnet:crystal
     steps:
       - run: mkdir -p ros2_unity_ws/src
       - run: wget https://github.com/DynoRobotics/unity_ros2/raw/master/ros2_unity_standalone.repos
