@@ -3,6 +3,14 @@ Unity for ROS2
 
 ![Turtebot3 Navigation2](https://i.gyazo.com/98d3d43aae3877593ecaefe4e5ba9a44.gif)
 
+Build status
+------------
+
+| Target | Status |
+|----------|--------|
+| **Windows 10 Desktop**                  | [![Build status](https://ci.appveyor.com/api/projects/status/5hst1rj4hkjs54i9?svg=true)](https://ci.appveyor.com/project/samiamlabs/unity-ros2) |
+| **Linux**                  | [![CircleCI](https://circleci.com/gh/DynoRobotics/unity_ros2.svg?style=svg)](https://circleci.com/gh/DynoRobotics/unity_ros2) |
+
 Introduction
 ------------
 
