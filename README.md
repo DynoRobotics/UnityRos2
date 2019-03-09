@@ -56,6 +56,7 @@ Plenty of stuff!
 - 3d sensor
 - Pointcloud visualizer
 - Video visualiszer
+- ros2_control support
 - Hololens support
 
 How can I try this out?
