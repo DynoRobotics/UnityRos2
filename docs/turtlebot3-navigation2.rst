@@ -57,6 +57,7 @@ Copy the shortcut to UnityHub to ``C:\dev\UnityHub.lnk`` before writing the foll
 Linux
 """""
 Assuming you have downloaded the UnityHubSetup.AppImage file to ~/Unity run the following in the terminal:
+
 .. code-block:: console
 
     ~/Unity/UnityHubSetup.AppImage
