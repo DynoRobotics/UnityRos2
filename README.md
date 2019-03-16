@@ -70,7 +70,7 @@ Plenty of stuff!
 How can I try this out?
 -------------------------------------
 
-First of all install the standard ROS2 Crystal Clemmys dependencies for your operating system of choice https://index.ros.org/doc/ros2/Installation/
+First of all install the standard ROS2 from source Crystal Clemmys dependencies for your operating system of choice https://index.ros.org/doc/ros2/Installation/
 
 Next make sure you've installed .Net Core https://www.microsoft.com/net/learn/get-started. On Windows 10 I recommend installing .NET via Visual Studio 2017.
 
