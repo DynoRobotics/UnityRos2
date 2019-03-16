@@ -9,32 +9,32 @@ repositories:
     url: https://github.com/DynoRobotics/nav2_msgs.git
     version: master
 
-  dontnet/ament_cmake_export_assemblies:
+  dotnet/ament_cmake_export_assemblies:
     type: git
     url: https://github.com/DynoRobotics/ament_cmake_export_assemblies.git
     version: master
 
-  dontnet/unity_ros2:
+  dotnet/unity_ros2:
     type: git
     url: https://github.com/DynoRobotics/unity_ros2.git
     version: master
 
-  dontnet/rcldotnet_common:
+  dotnet/rcldotnet_common:
     type: git
     url: https://github.com/DynoRobotics/rcldotnet_common.git
     version: master
 
-  dontnet/rclcs:
+  dotnet/rclcs:
     type: git
     url: https://github.com/DynoRobotics/rclcs.git
     version: master
 
-  dontnet/rosidl_generator_cs:
+  dotnet/rosidl_generator_cs:
     type: git
     url: https://github.com/DynoRobotics/rosidl_generator_cs.git
     version: master
 
-  dontnet/dotnet_cmake_module:
+  dotnet/dotnet_cmake_module:
     type: git
     url: https://github.com/DynoRobotics/dotnet_cmake_module.git
     version: master
