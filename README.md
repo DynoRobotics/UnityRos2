@@ -68,8 +68,7 @@ Plenty of stuff!
 - Hololens support
 
 How can I try this out?
--------------------------------------
-
+-----------------------
 First of all install the standard ROS2 from source Crystal Clemmys dependencies for your operating system of choice https://index.ros.org/doc/ros2/Installation/
 
 Next make sure you've installed .Net Core https://www.microsoft.com/net/learn/get-started. On Windows 10 I recommend installing .NET via Visual Studio 2017.
@@ -82,6 +81,9 @@ https://forum.unity.com/threads/unity-hub-v-1-5-0-is-now-available.627847/
 Tutorials
 ---------
 https://unity-ros2.readthedocs.io
+
+Installing
+----------
 
 The following steps show how to build the example Unity/ROS2 project on Linux:
 
