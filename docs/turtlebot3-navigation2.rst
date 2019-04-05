@@ -60,6 +60,7 @@ Assuming you have downloaded the UnityHubSetup.AppImage file to ~/Unity run the 
 
 .. code-block:: console
 
+    chmod +x ~/Unity/UnityHubSetup.AppImage
     ~/Unity/UnityHubSetup.AppImage
 
 .. figure:: /_static/UnityHub.png
