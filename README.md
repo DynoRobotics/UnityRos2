@@ -69,9 +69,12 @@ Plenty of stuff!
 
 How can I try this out?
 -----------------------
-First of all install the standard ROS2 from source Crystal Clemmys dependencies for your operating system of choice https://index.ros.org/doc/ros2/Installation/
+There are some prebuilt binaries available for this project that can make it easier to get started. If you want not use custom ROS2 messages from Unity you will need to build the project from source in order to generate c# libraries for them.
 
-Next make sure you've installed .Net Core https://www.microsoft.com/net/learn/get-started. On Windows 10 I recommend installing .NET via Visual Studio 2017.
+You need to install the standard ROS2 Crystal Clemmys dependencies for your operating system of choice https://index.ros.org/doc/ros2/Installation/
+If you are building this project from source you will probably need to install the "from source" dependencies for ROS2 as well.
+
+To build from source you will also need .Net Core https://www.microsoft.com/net/learn/get-started. On Windows 10 I recommend installing .NET via Visual Studio 2017.
 
 Install Unity
 https://forum.unity.com/threads/unity-hub-v-1-5-0-is-now-available.627847/
@@ -85,7 +88,7 @@ https://unity-ros2.readthedocs.io
 Installing
 ----------
 
-The following steps show how to build the example Unity/ROS2 project on Linux:
+The following steps describe how to install the example Unity/ROS2 project on Linux and Windows 10:
 
 Linux
 -----
