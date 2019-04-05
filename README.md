@@ -79,6 +79,10 @@ https://forum.unity.com/threads/unity-hub-v-1-5-0-is-now-available.627847/
 
 *NOTE: Tested with Unity 2018.3.6f1*
 
+Tutorials
+---------
+https://unity-ros2.readthedocs.io
+
 The following steps show how to build the example Unity/ROS2 project on Linux:
 
 Linux
@@ -132,9 +136,7 @@ Now you can open this repository as a project in Unity and run the example scene
 The repository sould be located at dev\ros2_unity_ws\src\dotnet\unity_ros2 if you followed the instructions above.
 Make sure you open Unity in a shell where you have sourced setup.bash so that the linker can find the C libraries.
 
-Tutorials
----------
-https://unity-ros2.readthedocs.io
+
 
 Example Applications
 --------------------
