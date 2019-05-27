@@ -92,17 +92,18 @@ The following steps describe how to install the example Unity/ROS2 project on Li
 
 Linux
 -----
-### Using the prebuilt workspace
+### Option 1: Using the prebuilt workspace
 
 Download the latest archive for linux from [releases](https://github.com/DynoRobotics/unity_ros2/releases) 
-Let’s assume that it ends up at `~/Downloads/standalone-unity-ws-0.0.1-beta-linux-xenial-amd64.tar.bz2`
+Let’s assume that it ends up at `~/Downloads/standalone-unity-ws-0.0.1-beta-linux-bionic-amd64.tar.bz2`
+The "standalone" workspace containes a minimal build of ROS2 in adition to the unity_ros2 specific stuff. Because of this you don't need to source a ros2 build separately.
 
 ```
 cd ~
-tar xf ~/Downloads/standalone-unity-ws-0.0.1-beta-linux-xenial-amd64.tar.bz2
+tar xf ~/Downloads/standalone-unity-ws-0.0.1-beta-linux-bionic-amd64.tar.bz2
 ```
 
-### Building from source
+### Option 2: Building from source
 
 ```
 mkdir -p ~/ros2_unity_ws/src
@@ -119,14 +120,15 @@ Make sure you open Unity in a shell where you have sourced setup.bash so that th
 
 Windows 10
 ----------
-### Using the prebuilt workspace
+### Option 1: Using the prebuilt workspace
 Download the latest zip file for windows from [releases](https://github.com/DynoRobotics/unity_ros2/releases) 
 Extract all to \dev\standalone_unity_ws
+The "standalone" workspace containes a minimal build of ROS2 in adition to the unity_ros2 specific stuff. Because of this you don't need to source a ros2 build separately.
 ```
 call \dev\standalone_unity_ws\install\local_setup.bat
 
 ```
-### Building from source
+### Option 2: Building from source 
 ```
 md \dev\ros2_unity_ws\src
 cd \dev\ros2_unity_ws
