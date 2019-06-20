@@ -1,18 +1,11 @@
 repositories:
-  ros2/geometry2:
-    type: git
-    url: https://github.com/ros2/geometry2.git
-    version: ros2
 
-  ros2/nav2_msgs:
-    type: git
-    url: https://github.com/DynoRobotics/nav2_msgs.git
-    version: master
+  # Unity ROS2 required repos
 
   dotnet/ament_cmake_export_assemblies:
     type: git
     url: https://github.com/DynoRobotics/ament_cmake_export_assemblies.git
-    version: master
+    version: dashing
 
   dotnet/unity_ros2:
     type: git
@@ -22,40 +15,55 @@ repositories:
   dotnet/rcldotnet_common:
     type: git
     url: https://github.com/DynoRobotics/rcldotnet_common.git
-    version: master
+    version: dashing 
 
   dotnet/rclcs:
     type: git
     url: https://github.com/DynoRobotics/rclcs.git
-    version: master
+    version: dashing
 
   dotnet/rosidl_generator_cs:
     type: git
     url: https://github.com/DynoRobotics/rosidl_generator_cs.git
-    version: master
+    version: dashing
 
   dotnet/dotnet_cmake_module:
     type: git
     url: https://github.com/DynoRobotics/dotnet_cmake_module.git
-    version: master
+    version: dashing
 
   # ROS2 dependencies
+
   ros2/rosidl_defaults:
     type: git
     url: https://github.com/ros2/rosidl_defaults.git
-    version: 0.6.0
+    version: dashing
+
+  # Messages to be generated for dotnet 
+
+  ros2/geometry2:
+    type: git
+    url: https://github.com/ros2/geometry2.git
+    version: dashing
 
   ros2/rcl_interfaces:
     type: git
     url: https://github.com/ros2/rcl_interfaces.git
-    version: 0.6.2
+    version: dashing
 
   ros2/common_interfaces:
     type: git
     url: https://github.com/ros2/common_interfaces.git
-    version: 0.6.1
+    version: dashing
 
   ros2/unique_identifier_msgs:
     type: git
     url: https://github.com/ros2/unique_identifier_msgs.git
-    version: 2.0.0
+    version: dashing
+
+  ros2/nav2_msgs:
+    type: git
+    url: https://github.com/DynoRobotics/nav2_msgs.git
+    version: master
+
+
