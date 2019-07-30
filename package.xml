@@ -10,14 +10,13 @@
   <buildtool_depend>ament_cmake</buildtool_depend>
 
   <build_depend>rcldotnet_common</build_depend>
-  <build_depend>rclcs</build_depend>
+  <build_depend>rcldotnet</build_depend>
   <build_depend>rosidl_generator_cs</build_depend>
   <build_depend>std_msgs</build_depend>
   <build_depend>geometry_msgs</build_depend>
   <build_depend>sensor_msgs</build_depend>
   <build_depend>tf2_msgs</build_depend>
   <build_depend>nav_msgs</build_depend>
-  <build_depend>nav2_msgs</build_depend>
 
   <export>
     <build_type>ament_cmake</build_type>

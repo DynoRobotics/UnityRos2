@@ -38,7 +38,7 @@ endfunction(add_to_unity)
 add_to_unity(
   DEPENDS
     rcldotnet_common
-    rclcs
+    rcldotnet
     rosidl_generator_cs
     builtin_interfaces
     std_msgs
@@ -46,7 +46,6 @@ add_to_unity(
     sensor_msgs
     tf2_msgs
     nav_msgs
-    nav2_msgs
 )
 
 ament_package()
