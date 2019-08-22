@@ -46,3 +46,5 @@ sysinfo.txt
 
 # Crashlytics generated file
 crashlytics-build.properties
+
+Assets/ros_config.yaml
