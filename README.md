@@ -43,6 +43,8 @@ Installing dependencies
 -----------------------
 Chocolatey is a package manager for Windows, install it by following their installation instructions:
 
+Install Visual Studio 2019
+
 https://chocolatey.org/
 choco install -y python
 choco install -y cmake
@@ -52,6 +54,9 @@ Please download these packages from [this](https://github.com/ros2/choco-package
 
 Run in terminal as admin:
 choco install -y -s <PATH\TO\DOWNLOADS\> asio eigen tinyxml-usestl tinyxml2 log4cxx
+
+Download an OpenSSL installer from [this page](https://slproweb.com/products/Win32OpenSSL.html).Scroll to the bottom of the page and download Win64 OpenSSL v1.0.2. Don’t download the Win32 or Light versions.
+Add C:\OpenSSL-Win64\bin\ to PATH under System variables.
 
 ### Option 1: Using the prebuilt project
 Download the latest unityPackage for Windows 10 from [releases](https://github.com/DynoRobotics/unity_ros2/releases) 
