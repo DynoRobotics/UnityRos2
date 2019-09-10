@@ -46,6 +46,12 @@ Chocolatey is a package manager for Windows, install it by following their insta
 https://chocolatey.org/
 choco install -y python
 choco install -y cmake
+python -m pip install -U catkin_pkg empy lark-parser opencv-python pyparsing pyyaml setuptools
+
+Please download these packages from [this](https://github.com/ros2/choco-packages/releases/latest) GitHub repository.
+
+Run in terminal as admin:
+choco install -y -s <PATH\TO\DOWNLOADS\> asio eigen tinyxml-usestl tinyxml2 log4cxx
 
 ### Option 1: Using the prebuilt project
 Download the latest unityPackage for Windows 10 from [releases](https://github.com/DynoRobotics/unity_ros2/releases) 
