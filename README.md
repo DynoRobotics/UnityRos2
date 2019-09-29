@@ -25,7 +25,7 @@ To build from source you will also need .Net Core https://www.microsoft.com/net/
 Install Unity
 https://forum.unity.com/threads/unity-hub-v-1-5-0-is-now-available.627847/
 
-*NOTE: Tested with Unity 2018.3.6f1*
+*NOTE: Tested with Unity 2019.2.6f1*
 
 Tutorials
 ---------
@@ -59,13 +59,13 @@ Download an OpenSSL installer from [this page](https://slproweb.com/products/Win
 Add C:\OpenSSL-Win64\bin\ to PATH under System variables.
 
 ### Option 1: Using the prebuilt project
-Download the latest unityPackage for Windows 10 from [releases](https://github.com/DynoRobotics/unity_ros2/releases) 
+Download the latest unityPackage for Windows 10 from [releases](https://github.com/DynoRobotics/unity_ros2/releases)
 
 ```
 call \dev\standalone_unity_ws\install\local_setup.bat
 
 ```
-### Option 2: Building from source 
+### Option 2: Building from source
 ```
 md \dev\ros2_unity_ws\src
 cd \dev\ros2_unity_ws
@@ -85,4 +85,3 @@ Example Applications
 --------------------
 [![Sweepbot](https://img.youtube.com/vi/eMKbbEQhBTg/0.jpg)](https://www.youtube.com/watch?v=nggGs9ZIdlk)
 [![Package DropOff](https://img.youtube.com/vi/2is7kwPeydA/0.jpg)](https://www.youtube.com/watch?v=lptKRANOfCY)
-
