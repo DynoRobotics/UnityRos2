@@ -1,4 +1,10 @@
-﻿using System.Collections;
+﻿/*
+© Dyno Robotics, 2019
+Author: Samuel Lindgren (samuel@dynorobotics.se)
+Licensed under the Apache License, Version 2.0
+*/
+
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using rclcs;
@@ -12,9 +18,11 @@ public abstract class MonoBehaviourRosNode : MonoBehaviour
 
     private Context context;
 
+    private bool isAwake = false;
+
     private void OnValidate() {
         getContext();
-        if (context != null)
+        if (context != null && isAwake)
         {
             StopAllCoroutines();
             CreateRosNode();
@@ -22,9 +30,10 @@ public abstract class MonoBehaviourRosNode : MonoBehaviour
         }
     }
     private void Awake() {
-            StopAllCoroutines();
-            CreateRosNode();
-            StartRos();
+        StopAllCoroutines();
+        CreateRosNode();
+        StartRos();
+        isAwake = true;
     }
 
     private void CreateRosNode()

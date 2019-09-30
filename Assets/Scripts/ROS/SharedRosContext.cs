@@ -1,4 +1,10 @@
-﻿using System.Collections;
+﻿/*
+© Dyno Robotics, 2019
+Author: Samuel Lindgren (samuel@dynorobotics.se)
+Licensed under the Apache License, Version 2.0 (the "License");
+*/
+
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -22,7 +28,7 @@ public class SharedRosContext : MonoBehaviour
 
     private void CreateRosContext()
     {
-        Application.SetStackTraceLogType(LogType.Log, StackTraceLogType.Full);
+        //Application.SetStackTraceLogType(LogType.Log, StackTraceLogType.Full);
         #if (UNITY_EDITOR)
         ROS2.Utils.GlobalVariables.preloadLibrary = true; 
         ROS2.Utils.GlobalVariables.preloadLibraryName = "librmw_fastrtps_cpp.so"; 
