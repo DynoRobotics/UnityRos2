@@ -36,7 +36,7 @@ public class TalkerExample : MonoBehaviourRosNode
     {
         for (;;)
         {
-            msg.Data = "Hello World: " + counter.ToString();
+            msg.Data = "Hello World" + counter.ToString();
             Debug.Log("Publishing: " + counter.ToString());
             chatterPublisher.Publish(msg);
             counter++;
