@@ -14,6 +14,10 @@ public class UnityInputTeleop : MonoBehaviourRosNode
     public string NodeName = "unity_teleop";
     public string CommandVelocityTopic = "cmd_vel";
 
+    public float MaxForwardVelocity = 1.0f;
+    public float MaxSidewaysVelocity = 1.0f;
+    public float MaxRotationalVelocity = 3.0f;
+
     public float PublishingFrequency = 20.0f;
 
     public bool UseHolonomicControls = false;
@@ -33,18 +37,22 @@ public class UnityInputTeleop : MonoBehaviourRosNode
     {
         for (;;)
         {
-            cmdVelMsg.Linear.X = Input.GetAxis("Vertical");
-            if (UseHolonomicControls)
-            {
-                cmdVelMsg.Linear.Y = -Input.GetAxis("Horizontal");
-                cmdVelMsg.Angular.Z = -Input.GetAxis("Turning");
-            }
-            else
-            {
-                cmdVelMsg.Angular.Z = -Input.GetAxis("Horizontal");
-            }
             cmdVelPublisher.Publish(cmdVelMsg);
             yield return new WaitForSeconds(1.0f / PublishingFrequency);
+        }
+    }
+
+    private void Update()
+    {
+        cmdVelMsg.Linear.X = Input.GetAxis("Vertical") * MaxForwardVelocity;
+        if (UseHolonomicControls)
+        {
+            cmdVelMsg.Linear.Y = -Input.GetAxis("Horizontal") * MaxSidewaysVelocity;
+            cmdVelMsg.Angular.Z = -Input.GetAxis("Turning") * MaxRotationalVelocity;
+        }
+        else
+        {
+            cmdVelMsg.Angular.Z = -Input.GetAxis("Horizontal") * MaxRotationalVelocity;
         }
     }
 }

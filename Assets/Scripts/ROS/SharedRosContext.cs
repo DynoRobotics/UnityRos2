@@ -11,6 +11,7 @@ using UnityEngine;
 public class SharedRosContext : MonoBehaviour
 {
     public rclcs.Context Context;
+    public rclcs.Clock Clock = new rclcs.Clock();
 
     private void OnValidate() {
         if (Context == null)

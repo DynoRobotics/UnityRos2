@@ -13,15 +13,14 @@ public abstract class MonoBehaviourRosNode : MonoBehaviour
 {
     protected abstract string nodeName { get; }
     protected Node node;
-
     protected int spinSomeIterations = 10;
+    protected Clock clock;
 
     private Context context;
-
     private bool isAwake = false;
 
     private void OnValidate() {
-        getContext();
+        getSharedContext();
         if (context != null && isAwake)
         {
             StopAllCoroutines();
@@ -38,16 +37,17 @@ public abstract class MonoBehaviourRosNode : MonoBehaviour
 
     private void CreateRosNode()
     {
-        getContext();
+        getSharedContext();
         node = new Node(nodeName, context);
     }
 
-    private void getContext()
+    private void getSharedContext()
     {
         var sharedContextInstances = FindObjectsOfType(typeof(SharedRosContext));
         if (sharedContextInstances.Length > 0)
         {
             context = ((SharedRosContext)sharedContextInstances[0]).Context;
+            clock = ((SharedRosContext)sharedContextInstances[0]).Clock;
         } else
         {
             Debug.LogWarning("No shared ROS context found in scene!");
