@@ -103,7 +103,6 @@ public class Odometry : MonoBehaviourRosNode
     {
         // TODO(sam): Add (optional) drift and noise
 
-        // TODO(sam): specify odom Unity transform referance frame
         odometryMsg.Header.Update(clock);
         if (OdomReferanceFrame == null)
         {
@@ -118,7 +117,6 @@ public class Odometry : MonoBehaviourRosNode
         if (PublishTf)
         {
             tfMsg.Transforms[0].Header.Update(clock);
-            // TODO(sam): specify odom Unity transform referance frame
             if (OdomReferanceFrame == null)
             {
                 tfMsg.Transforms[0].Transform.LocalUnity2Ros(BaseRigidbody.transform);
