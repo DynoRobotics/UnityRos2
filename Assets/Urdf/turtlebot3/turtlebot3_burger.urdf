@@ -154,6 +154,7 @@
 
   <unity reference="base_footprint">
     <component name="TwistBaseController"/>
+    <component name="GroundTruthOdometry"/>
   </unity>
 
   <unity reference="base_scan">

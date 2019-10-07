@@ -43,7 +43,7 @@ namespace RosSharp.Urdf.Editor
             linkObject.AddComponent<UrdfSimulatedLink>();
 
             UrdfVisualsFactory.Create(linkObject.transform, link?.visuals);
-            // UrdfCollisionsExtensions.Create(linkObject.transform, link?.collisions);
+            UrdfCollisionsFactory.Create(linkObject.transform, link?.collisions);
 
             // TODO(sam): contidionally add Rigidbodies to links from inertia?
             //if (link?.inertial != null)

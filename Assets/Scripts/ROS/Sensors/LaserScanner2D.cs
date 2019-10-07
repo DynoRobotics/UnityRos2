@@ -27,7 +27,7 @@ public class LaserScanner2D : MonoBehaviourRosNode
 
     public LayerMask LayerMask = -1;
     public bool Visualize = true;
-    public Color VisualizationColor = Color.red;
+    public Color VisualizationColor = new Color(1.0f, 0.0f, 0.0f, 0.1f);
 
     public float PublisherDelay = 0.05f; // To prevent lookup into future tf2 errors
 

@@ -9,7 +9,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using rclcs;
 
-public class Odometry : MonoBehaviourRosNode
+public class GroundTruthOdometry : MonoBehaviourRosNode
 {
     public string NodeName = "odometry";
     public string OdometryTopic = "odom";

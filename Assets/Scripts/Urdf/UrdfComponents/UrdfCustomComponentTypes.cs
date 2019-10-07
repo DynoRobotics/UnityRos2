@@ -14,7 +14,8 @@ namespace RosSharp.Urdf
        public static Dictionary<string, System.Type> Dictionary = new Dictionary<string, System.Type>
        {
            {"TwistBaseController", typeof(TwistBaseController) },
-           {"LaserScanner2D", typeof(LaserScanner2D) }
+           {"LaserScanner2D", typeof(LaserScanner2D) },
+           {"GroundTruthOdometry", typeof(GroundTruthOdometry) }
        };
     }
 }

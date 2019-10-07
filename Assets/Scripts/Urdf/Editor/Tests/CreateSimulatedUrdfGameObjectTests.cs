@@ -32,6 +32,10 @@ namespace Tests
         [SetUp]
         public void BeforeEveryTest()
         {
+            // Create new scene 
+            // Note(sam): Is there a setting that allows a single new scene to be reused?
+            UnityEditor.SceneManagement.EditorSceneManager.NewScene(UnityEditor.SceneManagement.NewSceneSetup.EmptyScene, UnityEditor.SceneManagement.NewSceneMode.Single);
+
             urdfString =
             @"<?xml version=""1.0"" ?>
                 <robot name=""test_robot"">
@@ -139,7 +143,7 @@ namespace Tests
 
                     </link>
 
-                    <unity reference=""base_link"">
+                    <unity reference=""base_footprint"">
                         <component name=""TwistBaseController""/>
                     </unity>
 
@@ -165,10 +169,14 @@ namespace Tests
         public IEnumerator _Adds_Components_To_Links()
         {
             yield return null;
-            GameObject baseLink = GameObject.Find("base_link");
+
+            GameObject baseLink = GameObject.Find("base_footprint");
             var baseControllerComponent = baseLink.GetComponent<TwistBaseController>();
-            Debug.Log(baseControllerComponent);
             Assert.That(baseControllerComponent, Is.Not.Null);
+
+            GameObject sensorLink = GameObject.Find("sensor_link");
+            var laserScannerComponent = sensorLink.GetComponent<LaserScanner2D>();
+            Assert.That(laserScannerComponent, Is.Not.Null);
         }
 
         [UnityTest]
