@@ -29,7 +29,7 @@ namespace RosSharp.Urdf.Editor
             UrdfVisual urdfVisual = visualObject.AddComponent<UrdfVisual>();
 
             urdfVisual.GeometryType = type;
-            UrdfGeometryVisual.Create(visualObject.transform, type);
+            UrdfGeometryVisualFactory.Create(visualObject.transform, type);
             UnityEditor.EditorGUIUtility.PingObject(visualObject);
         }
 
@@ -39,10 +39,10 @@ namespace RosSharp.Urdf.Editor
             visualObject.transform.SetParentAndAlign(parent);
             UrdfVisual urdfVisual = visualObject.AddComponent<UrdfVisual>();
 
-            urdfVisual.GeometryType = UrdfGeometry.GetGeometryType(visual.geometry);
-            UrdfGeometryVisual.Create(visualObject.transform, urdfVisual.GeometryType, visual.geometry);
+            urdfVisual.GeometryType = UrdfGeometryFactory.GetGeometryType(visual.geometry);
+            UrdfGeometryVisualFactory.Create(visualObject.transform, urdfVisual.GeometryType, visual.geometry);
 
-            UrdfMaterial.SetUrdfMaterial(visualObject, visual.material);
+            UrdfMaterialFactory.SetUrdfMaterial(visualObject, visual.material);
             UrdfOrigin.ImportOriginData(visualObject.transform, visual.origin);
         }
 
@@ -55,13 +55,13 @@ namespace RosSharp.Urdf.Editor
 
         public static UrdfLink.Visual ExportVisualData(this UrdfVisual urdfVisual)
         {
-            UrdfGeometry.CheckForUrdfCompatibility(urdfVisual.transform, urdfVisual.GeometryType);
+            UrdfGeometryFactory.CheckForUrdfCompatibility(urdfVisual.transform, urdfVisual.GeometryType);
 
-            UrdfLink.Geometry geometry = UrdfGeometry.ExportGeometryData(urdfVisual.GeometryType, urdfVisual.transform);
+            UrdfLink.Geometry geometry = UrdfGeometryFactory.ExportGeometryData(urdfVisual.GeometryType, urdfVisual.transform);
 
             UrdfLink.Visual.Material material = null;
             if (!(geometry.mesh != null && geometry.mesh.filename.ToLower().EndsWith(".dae"))) //Collada files contain their own materials
-                material = UrdfMaterial.ExportMaterialData(urdfVisual.GetComponentInChildren<MeshRenderer>().sharedMaterial);
+                material = UrdfMaterialFactory.ExportMaterialData(urdfVisual.GetComponentInChildren<MeshRenderer>().sharedMaterial);
 
             string visualName = urdfVisual.name == "unnamed" ? null : urdfVisual.name;
 

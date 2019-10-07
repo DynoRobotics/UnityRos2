@@ -75,43 +75,64 @@ namespace Tests
                             <material name=""black""/>
                         </visual>
                     </link>
+
+                    <unity reference=""base_link"">
+                        <component name=""TwistBaseController""/>
+                    </unity>
+
+                    <unity reference=""sensor_link"">
+                        <component name=""LaserScanner2D""/>
+                    </unity>
+
                 </robot>";
 
             robot = new Robot();
+            robot.ConstructFromString(urdfString);
+        }
+
+        [Test]
+        public void _Reads_Unity_Component()
+        {
+            var unityComponent = robot.unityComponets.Find(components => components.reference == "base_link");
+            Assert.That(unityComponent, Is.Not.Null);
+            Assert.That(unityComponent.name, Is.EqualTo("TwistBaseController"));
+        }
+
+        [Test]
+        public void _Adds_Unity_Components_To_Link_Tree()
+        {
+            UrdfLink baseLink = robot.links.Find(link => link.name == "base_link");
+            var twistBaseController = baseLink.unityComponents.Find(unityComponent => unityComponent.name == "TwistBaseController");
+            Assert.That(twistBaseController, Is.Not.Null);
         }
 
         [Test]
         public void _Reads_Robot_Name()
         {
-            robot.ConstructFromString(urdfString);
             Assert.That(robot.name, Is.EqualTo("test_robot"));
         }
 
         [Test]
         public void _Reads_Materials()
         {
-            robot.ConstructFromString(urdfString);
             Assert.That(robot.materials.Count, Is.EqualTo(2));
         }
 
         [Test]
         public void _Reads_Links()
         {
-            robot.ConstructFromString(urdfString);
             Assert.That(robot.links.Count, Is.EqualTo(3));
         }
 
         [Test]
         public void _Reads_Joints()
         {
-            robot.ConstructFromString(urdfString);
             Assert.That(robot.joints.Count, Is.EqualTo(2));
         }
 
         [Test]
         public void _Reads_Material_Colors()
         {
-            robot.ConstructFromString(urdfString);
             foreach (UrdfLink.Visual.Material material in robot.materials)
             {
                 if (material.name == "black")
@@ -124,8 +145,6 @@ namespace Tests
         [Test]
         public void _Creates_Joint_Link_Tree()
         {
-            robot.ConstructFromString(urdfString);
-
             UrdfLink baseFootprintLink = robot.links.Find(link => link.name == "base_footprint");
             UrdfLink baseLink = robot.links.Find(link => link.name == "base_link");
             UrdfLink sensorLink = robot.links.Find(link => link.name == "sensor_link");
@@ -143,8 +162,6 @@ namespace Tests
         [Test]
         public void _Reads_Joint_Origins()
         {
-            robot.ConstructFromString(urdfString);
-
             UrdfJoint sensorJoint = robot.joints.Find(joint => joint.name == "sensor_joint");
             Origin origin = sensorJoint.origin;
             Assert.That(origin.Xyz, Is.EqualTo(new[] { 0.7d, 0.8d, 0.9d }));
@@ -154,8 +171,6 @@ namespace Tests
         [Test]
         public void _Reads_Visual_Origins()
         {
-            robot.ConstructFromString(urdfString);
-
             UrdfLink sensorLink = robot.links.Find(link => link.name == "sensor_link");
             UrdfLink.Visual visual = sensorLink.visuals[0];
             Origin origin = visual.origin;
@@ -166,8 +181,6 @@ namespace Tests
         [Test]
         public void _Reads_Link_Visual_Geometry()
         {
-            robot.ConstructFromString(urdfString);
-
             UrdfLink sensorLink = robot.links.Find(link => link.name == "sensor_link");
             UrdfLink.Geometry geometry = sensorLink.visuals[0].geometry;
             UrdfLink.Geometry.Sphere sphere = geometry.sphere;

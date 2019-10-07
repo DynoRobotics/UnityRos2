@@ -9,6 +9,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using rclcs;
 
+[RequireComponent(typeof(Rigidbody))]
 public class TwistBaseController : MonoBehaviourRosNode
 {
     public string NodeName = "twist_base_controller";

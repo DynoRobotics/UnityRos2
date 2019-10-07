@@ -20,7 +20,7 @@ using UnityEngine;
 
 namespace RosSharp.Urdf.Editor
 {
-    public class UrdfGeometryVisual : UrdfGeometry
+    public class UrdfGeometryVisualFactory : UrdfGeometryFactory
     {
         public static void Create(Transform parent, GeometryTypes geometryType, UrdfLink.Geometry geometry = null)
         {

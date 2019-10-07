@@ -24,7 +24,7 @@ using UnityEditor;
 
 namespace RosSharp.Urdf.Editor
 {
-    public static class UrdfMaterial
+    public static class UrdfMaterialFactory
     {
         private const string DefaultMaterialName = "Default";
         private const int RoundDigits = 4;

@@ -29,6 +29,7 @@ namespace RosSharp.Urdf
         public List<Visual> visuals;
         public List<Collision> collisions;
         public List<UrdfJoint> joints;
+        public List<UrdfUnityComponent> unityComponents;
 
         public UrdfLink(XElement node)
         {
@@ -46,6 +47,7 @@ namespace RosSharp.Urdf
             visuals = new List<Visual>();
             collisions = new List<Collision>();
             joints = new List<UrdfJoint>();
+            unityComponents = new List<UrdfUnityComponent>();
         }
 
         public void WriteToUrdf(XmlWriter writer)

@@ -55,7 +55,7 @@ namespace RosSharp.Urdf.Editor
         {
             GameObject robotGameObject = new GameObject(robot.name);
 
-            UrdfMaterial.InitializeRobotMaterials(robot);
+            UrdfMaterialFactory.InitializeRobotMaterials(robot);
 
             UrdfSimulatedLinkFactory.Create(robotGameObject.transform, robot.root);
 

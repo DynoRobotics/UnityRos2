@@ -138,6 +138,14 @@ namespace Tests
                         </inertial >
 
                     </link>
+
+                    <unity reference=""base_link"">
+                        <component name=""TwistBaseController""/>
+                    </unity>
+
+                    <unity reference=""sensor_link"">
+                        <component name=""LaserScanner2D""/>
+                    </unity>
                 </robot>";
 
             UrdfSimulatedRobotFactory.CreateFromString(urdfString);
@@ -151,6 +159,16 @@ namespace Tests
             {
                 Object.DestroyImmediate(testGameObject);
             }
+        }
+
+        [UnityTest]
+        public IEnumerator _Adds_Components_To_Links()
+        {
+            yield return null;
+            GameObject baseLink = GameObject.Find("base_link");
+            var baseControllerComponent = baseLink.GetComponent<TwistBaseController>();
+            Debug.Log(baseControllerComponent);
+            Assert.That(baseControllerComponent, Is.Not.Null);
         }
 
         [UnityTest]
@@ -181,18 +199,14 @@ namespace Tests
             Assert.That(sensorLink.GetComponent<UrdfSimulatedLink>(), Is.Not.Null, "No UrdfSimulatedLink component");
         }
 
-        //[UnityTest]
-        //public IEnumerator _Creates_Simulation_Continuous_Joints()
-        //{
-        //    yield return null;
-        //    Assert.That(GameObject.Find("spinner_link").GetComponent<HingeJoint>(), Is.Not.Null);
-        //}
+        [UnityTest]
+        public IEnumerator _Creates_Simulation_Continuous_Joints()
+        {
+            yield return null;
+            GameObject spinnerLink = GameObject.Find("spinner_link");
+            Assert.That(spinnerLink.GetComponent<UrdfSimulatedJoint>(), Is.Not.Null);
+            Assert.That(spinnerLink.GetComponent<UrdfSimulatedJoint>().JointType, Is.EqualTo(JointTypes.Continuous));
+        }
 
-        //[UnityTest]
-        //public IEnumerator _Creates_Simulation_Prismatic_Joints()
-        //{
-        //    yield return null;
-        //    Assert.That(GameObject.Find("pusher_link").GetComponent<ConfigurableJoint>(), Is.Not.Null);
-        //}
     }
 }

@@ -21,7 +21,7 @@ using UnityEngine;
 
 namespace RosSharp.Urdf.Editor
 {
-    public class UrdfGeometry
+    public class UrdfGeometryFactory
     {
         private const int RoundDigits = 6;
 

@@ -22,6 +22,7 @@ using System.IO;
 using System.Linq;
 using System.Xml;
 using System.Xml.Linq;
+using UnityEngine;
 
 namespace RosSharp.Urdf
 {
@@ -35,6 +36,7 @@ namespace RosSharp.Urdf
         public List<UrdfLink> links;
         public List<UrdfJoint> joints;
         public List<Plugin> plugins;
+        public List<UrdfUnityComponent> unityComponets;
 
         public Robot()
         {
@@ -72,12 +74,18 @@ namespace RosSharp.Urdf
             links = ReadLinks(node);
             joints = ReadJoints(node);
             plugins = ReadPlugins(node);
+            unityComponets = ReadUnityComponents(node);
 
-            // build tree structure from link and joint lists:
+            // build tree structure from link ,joint and component lists:
             foreach (UrdfLink link in links)
+            {
                 link.joints = joints.FindAll(v => v.parent == link.name);
+                link.unityComponents = unityComponets.FindAll(v => v.reference == link.name);
+            }
             foreach (UrdfJoint joint in joints)
+            {
                 joint.ChildLink = links.Find(v => v.name == joint.child);
+            }
 
             // save root node only:
             root = FindRootLink(links, joints);
@@ -114,6 +122,21 @@ namespace RosSharp.Urdf
                 where child.Name != "link" && child.Name != "joint" && child.Name != "material"
                 select new Plugin(child.ToString());
             return plugins.ToList();
+        }
+        private List<UrdfUnityComponent> ReadUnityComponents(XElement node)
+        {
+            var unityComponents = new List<UrdfUnityComponent>();
+
+            foreach(var child in node.Elements("unity"))
+            {
+                string reference = (string)child.Attribute("reference");
+                foreach(var component in child.Elements("component"))
+                {
+                    unityComponents.Add(new UrdfUnityComponent(reference, component));
+                }
+            }
+
+            return unityComponents;
         }
 
         private static UrdfLink FindRootLink(List<UrdfLink> links, List<UrdfJoint> joints)
