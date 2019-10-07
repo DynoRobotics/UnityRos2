@@ -206,18 +206,18 @@ namespace rclcs
             rosTwist.Angular.Z = -rosAngularVelocity.z;
         }
 
-        //public static Vector3[] toUnityVector3Array(this nav_msgs.msg.Path pathMessage)
-        //{
-        //    var rosPoses = pathMessage.Poses;
+        public static Vector3[] toUnityVector3Array(this nav_msgs.msg.Path pathMessage)
+        {
+            var rosPoses = pathMessage.Poses;
 
-        //    Vector3[] unityVector3Array = new Vector3[rosPoses.Count];
-        //    for (int i = 0; i < rosPoses.Count; i++)
-        //    {
-        //        unityVector3Array[i] = rosPoses[i].Pose.Position.Ros2Unity();
-        //    }
+            Vector3[] unityVector3Array = new Vector3[rosPoses.Length];
+            for (int i = 0; i < rosPoses.Length; i++)
+            {
+                unityVector3Array[i] = rosPoses[i].Pose.Position.Ros2Unity();
+            }
 
-        //    return unityVector3Array;
-        //}
+            return unityVector3Array;
+        }
     }
 
 }

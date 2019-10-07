@@ -21,10 +21,10 @@ public class UnityInputTeleop : MonoBehaviourRosNode
     public float PublishingFrequency = 20.0f;
 
     public bool UseHolonomicControls = false;
+    protected override string nodeName { get { return NodeName; } }
 
     private Publisher<geometry_msgs.msg.Twist> cmdVelPublisher;
     private geometry_msgs.msg.Twist cmdVelMsg;
-    protected override string nodeName { get { return NodeName; } }
 
     protected override void StartRos()
     {
