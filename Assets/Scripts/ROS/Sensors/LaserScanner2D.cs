@@ -29,7 +29,7 @@ public class LaserScanner2D : MonoBehaviourRosNode
     public bool Visualize = true;
     public Color VisualizationColor = new Color(1.0f, 0.0f, 0.0f, 0.1f);
 
-    public float PublisherDelay = 0.05f; // To prevent lookup into future tf2 errors
+    public float PublisherDelay = 0.1f; // To prevent lookup into future tf2 errors
 
     private int numLines;
 
