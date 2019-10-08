@@ -1,0 +1,9 @@
+version: '3'
+
+services:
+  turtlebot3_unity:
+    volumes:
+      - ./turtlebot3_unity:/opt/app_ws/src/turtlebot3_unity
+      - ./turtlebot3_unity_bringup:/opt/app_ws/src/turtlebot3_unity_bringup
+      - ./turtlebot3_description:/opt/app_ws/src/turtlebot3_description
+    # command: tail -f /dev/null
