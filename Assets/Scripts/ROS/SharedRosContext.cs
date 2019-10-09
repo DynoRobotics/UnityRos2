@@ -1,7 +1,7 @@
 ﻿/*
 © Dyno Robotics, 2019
 Author: Samuel Lindgren (samuel@dynorobotics.se)
-Licensed under the Apache License, Version 2.0 (the "License");
+Licensed under the Apache License, Version 2.0
 */
 
 using System.Collections;
@@ -11,6 +11,7 @@ using UnityEngine;
 public class SharedRosContext : MonoBehaviour
 {
     public rclcs.Context Context;
+    public rclcs.Clock Clock = new rclcs.Clock();
 
     private void OnValidate() {
         if (Context == null)
@@ -38,7 +39,6 @@ public class SharedRosContext : MonoBehaviour
     }
 
     private void OnDestroy() {
-        Debug.Log("Destrying ROS context");
         rclcs.Rclcs.Shutdown(Context);
     }
 }
