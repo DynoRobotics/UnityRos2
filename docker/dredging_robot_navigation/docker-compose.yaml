@@ -1,0 +1,10 @@
+version: '3'
+
+services:
+  ros_navigation:
+    network_mode: host
+    image: dynorobotics/dredging_robot_navigation
+    build: .
+    tty: true
+    container_name: ros_navigation
+    command: ros2 launch dredging_robot_bringup nav2_bringup_launch.py
