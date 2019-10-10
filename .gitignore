@@ -48,3 +48,5 @@ sysinfo.txt
 crashlytics-build.properties
 
 Assets/ros_config.yaml
+Assets/SpaceNavigator.meta
+Assets/SpaceNavigator/
