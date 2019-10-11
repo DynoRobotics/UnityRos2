@@ -15,7 +15,7 @@ This project curretly supports Windows 10 and Ubuntu 18.04. It should be possibl
 
 How can I try this out?
 -----------------------
-There are some prebuilt binaries available for this project that can make it easier to get started. If you want to use custom ROS2 messages from Unity you will need to build the project from source in order to generate C# libraries for them. (See https://github.com/samiamlabs/ros2_dotnet for more info.)
+There are some prebuilt binaries available for this project that can make it easier to get started. If you want to use custom ROS2 messages in Unity you will need to build the projects "Plugin binaries" from source in order to generate C# libraries for the messages. (See https://github.com/samiamlabs/ros2_dotnet for more info.)
 
 Install Unity
 https://forum.unity.com/threads/unity-hub-v-1-5-0-is-now-available.627847/
@@ -59,11 +59,11 @@ You don't actually need to install the ROS2 binaries, just the dependencies. (Th
 Getting a Unity Project with ROS2 support
 -----------------------------------------
 
-### Option 1: Using the prebuilt unitypackage
-Download the latest unityPackage for Windows 10 from [releases](https://github.com/DynoRobotics/unity_ros2/releases)
-
-### Option 2: Clone this repo
+### Option 1: Clone this repo
 Just clone this repository to your local computer and open it accodring to the instructions below.
+
+### Option 2: Using the prebuilt unitypackage
+Download the latest unityPackage for Windows 10 from [releases](https://github.com/DynoRobotics/unity_ros2/releases)
 
 Running
 -------
