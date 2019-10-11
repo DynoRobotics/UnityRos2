@@ -22,16 +22,16 @@ https://forum.unity.com/threads/unity-hub-v-1-5-0-is-now-available.627847/
 
 *NOTE: Tested with Unity 2019.2.8*
 
-Installing
-----------
+Installing dependencies
+-----------------------
 
 The following steps describe how to install the example Unity/ROS2 project on Linux and Windows 10:
 
-Windows 10
-----------
-
 Installing dependencies
 -----------------------
+
+### Windows 10
+
 Install the standard ROS2 Dashing dependencies for ROS2 https://index.ros.org/doc/ros2/Installation/
 
 Chocolatey is a package manager for Windows, install it by following their installation instructions:
@@ -51,8 +51,8 @@ choco install -y -s <PATH\TO\DOWNLOADS\> asio eigen tinyxml-usestl tinyxml2 log4
 Download an OpenSSL installer from [this page](https://slproweb.com/products/Win32OpenSSL.html).Scroll to the bottom of the page and download Win64 OpenSSL v1.0.2. Don’t download the Win32 or Light versions.
 Add C:\OpenSSL-Win64\bin\ to PATH under System variables.
 
-Ubuntu 18.04
-------------
+### Ubuntu 18.04
+
 You first need to install the standard ROS2 Dashing dependencies for ROS2 https://index.ros.org/doc/ros2/Installation/
 
 It is probably easiest to follow https://index.ros.org/doc/ros2/Installation/Dashing/Linux-Install-Binary/.
