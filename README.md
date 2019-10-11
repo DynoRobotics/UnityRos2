@@ -15,13 +15,12 @@ This project curretly supports Windows 10 and Ubuntu 18.04. It should be possibl
 
 How can I try this out?
 -----------------------
-There are some prebuilt binaries available for this project that can make it easier to get started. If you want not use custom ROS2 messages from Unity you will need to build the project from source in order to generate C# libraries for them. (see https://github.com/samiamlabs/ros2_dotnet)
-
+There are some prebuilt binaries available for this project that can make it easier to get started. If you want not use custom ROS2 messages from Unity you will need to build the project from source in order to generate C# libraries for them. (See https://github.com/samiamlabs/ros2_dotnet for more info.)
 
 Install Unity
 https://forum.unity.com/threads/unity-hub-v-1-5-0-is-now-available.627847/
 
-*NOTE: Tested with Unity 2019.2.6f1*
+*NOTE: Tested with Unity 2019.2.8*
 
 Installing
 ----------
@@ -54,11 +53,14 @@ Add C:\OpenSSL-Win64\bin\ to PATH under System variables.
 
 Ubuntu 18.04
 ------------
-You need to install the standard ROS2 Dashing dependencies for ROS2 https://index.ros.org/doc/ros2/Installation/
+You first need to install the standard ROS2 Dashing dependencies for ROS2 https://index.ros.org/doc/ros2/Installation/
 
 It is probably easiest to follow https://index.ros.org/doc/ros2/Installation/Dashing/Linux-Install-Binary/.
 
 You don't actually need to install the ROS2 binaries, just the dependencies. (The ROS2 binaries are already packaged with the Unity project as Plugins). Installing the ROS2 binaries and running som examples is a good way to make sure that the dependencies are installd correctly though :)
+
+Getting the Unity Project
+-------------------------
 
 ### Option 1: Using the prebuilt unitypackage
 Download the latest unityPackage for Windows 10 from [releases](https://github.com/DynoRobotics/unity_ros2/releases)
