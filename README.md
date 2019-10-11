@@ -54,7 +54,7 @@ You first need to install the standard ROS2 Dashing dependencies for ROS2 https:
 
 It is probably easiest to follow https://index.ros.org/doc/ros2/Installation/Dashing/Linux-Install-Binary/.
 
-You don't actually need to install the ROS2 binaries, just the dependencies. (The ROS2 binaries are already packaged with the Unity project as Plugins). Installing the ROS2 binaries and running som examples is a good way to make sure that the dependencies are installd correctly though :)
+You don't actually need to install the ROS2 binaries, just the dependencies. (The required ROS2 dashing binaries are already packaged with the Unity project as Plugins). Installing the ROS2 binaries and running som examples is a good way to make sure that the dependencies are installd correctly though :)
 
 Getting a Unity Project with ROS2 support
 -----------------------------------------
