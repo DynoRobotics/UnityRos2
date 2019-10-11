@@ -23,10 +23,6 @@ https://forum.unity.com/threads/unity-hub-v-1-5-0-is-now-available.627847/
 
 *NOTE: Tested with Unity 2019.2.6f1*
 
-Tutorials
----------
-https://unity-ros2.readthedocs.io
-
 Installing
 ----------
 
@@ -56,7 +52,6 @@ choco install -y -s <PATH\TO\DOWNLOADS\> asio eigen tinyxml-usestl tinyxml2 log4
 Download an OpenSSL installer from [this page](https://slproweb.com/products/Win32OpenSSL.html).Scroll to the bottom of the page and download Win64 OpenSSL v1.0.2. Don’t download the Win32 or Light versions.
 Add C:\OpenSSL-Win64\bin\ to PATH under System variables.
 
-
 Ubuntu 18.04
 ------------
 You need to install the standard ROS2 Dashing dependencies for ROS2 https://index.ros.org/doc/ros2/Installation/
@@ -76,6 +71,10 @@ Running
 The ROS2 integration in UnityRos2 requires that some enviroment variables are set. (This has to do with the finding and linking of `.so` and `.dll` binaries to C# code)
 
 A script called `start_editor.py` (requires python3) sets these environment variables and starts the Editor. This is only way to start the Editor with ROS2 support at the moment. Opening the project through Unity Hub is not supported yet.
+
+Tutorials
+---------
+https://unity-ros2.readthedocs.io
 
 Features
 --------
