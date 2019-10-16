@@ -18,7 +18,7 @@ How can I try this out?
 There are some prebuilt binaries available for this project that can make it easier to get started. If you want to use custom ROS2 messages in Unity you will need to build the projects "Plugin binaries" from source in order to generate C# libraries for the messages. (See https://github.com/samiamlabs/ros2_dotnet for more info.)
 
 Install Unity
-https://forum.unity.com/threads/unity-hub-v-1-5-0-is-now-available.627847/
+https://forum.unity.com/threads/unity-hub-v-1-6-0-is-now-available.640792
 
 *NOTE: Tested with Unity 2019.2.8*
 
