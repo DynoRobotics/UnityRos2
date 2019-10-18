@@ -70,7 +70,7 @@ Running
 -------
 The ROS2 integration in UnityRos2 requires that some enviroment variables are set. (This has to do with the finding and linking of `.so` and `.dll` binaries to C# code)
 
-A script called `start_editor.py` (requires python3) sets these environment variables and starts the Editor. This is only way to start the Editor with ROS2 support at the moment. Opening the project through Unity Hub is not supported yet.
+A script called `start_editor.py` (requires python3) sets these environment variables and starts the Editor. **Don't** use sudo. This is only way to start the Editor with ROS2 support at the moment. Opening the project through Unity Hub is not supported yet.
 
 There is an example Scene named `RosNavigationExample` in this project for sending navigation goals to a turtlebot3 using the navigation2 stack.
 To start the navigation2 stack for turtlebot3, just run `docker-compose up` in the `docker/turtlebot3_navigation` folder of this repoistory. (Instructions for installing docker: https://dyno-system-config.readthedocs.io/en/latest/docker.html)
