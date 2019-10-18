@@ -58,7 +58,7 @@ Install Unity through Unity Hub
 https://forum.unity.com/threads/unity-hub-v-1-6-0-is-now-available.640792
 (the download link changes sometimes, so look at the newest posts)
 
-Note that Unity Hub in an installer, and that you will have to select and install your coosen version of the Unity Editor using it.
+Note that Unity Hub is an installer and that you will have to select and install your coosen version of the Unity Editor using it.
 https://docs.unity3d.com/Manual/GettingStartedInstallingHub.html
 *NOTE: Tested with Unity 2019.2.8*
 
