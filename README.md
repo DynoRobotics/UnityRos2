@@ -49,11 +49,11 @@ Add C:\OpenSSL-Win64\bin\ to PATH under System variables.
 You first need to install the standard ROS2 Dashing dependencies for ROS2 https://index.ros.org/doc/ros2/Installation/
 
 It is probably easiest to follow https://index.ros.org/doc/ros2/Installation/Dashing/Linux-Install-Binary/.
-
-You don't actually need to install the ROS2 binaries, just the dependencies. (The required ROS2 dashing binaries are already packaged with the Unity project as Plugins). Installing the ROS2 binaries and running som examples is a good way to make sure that the dependencies are installd correctly though :)
+  
+We recommend installing the ROS2 binaries and running sometimes examples to make sure that everything works before moving on.
 
 Installing Unity
------------------------
+----------------
 Install Unity through Unity Hub
 https://forum.unity.com/threads/unity-hub-v-1-6-0-is-now-available.640792
 (the download link changes sometimes, so look at the newest posts)
