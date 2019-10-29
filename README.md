@@ -50,7 +50,7 @@ You first need to install the standard ROS2 Dashing dependencies for ROS2 https:
 
 It is probably easiest to follow https://index.ros.org/doc/ros2/Installation/Dashing/Linux-Install-Binary/.
   
-We recommend installing the ROS2 binaries and running sometimes examples to make sure that everything works before moving on.
+We recommend installing the ROS2 binaries and running some examples to make sure that everything works before moving on.
 
 Installing Unity
 ----------------
