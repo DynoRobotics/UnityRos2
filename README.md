@@ -15,7 +15,7 @@ This project curretly supports Windows 10 and Ubuntu 18.04. It should be possibl
 
 How can I try this out?
 -----------------------
-There are some prebuilt binaries available for this project that can make it easier to get started. If you want to use custom ROS2 messages in Unity you will need to build the projects "Plugin binaries" from source in order to generate C# libraries for the messages. (See https://github.com/samiamlabs/ros2_dotnet for more info.)
+There are some prebuilt binaries available for this project that can make it easier to get started. If you want to use custom ROS2 messages in Unity you will need to build the projects "Plugin binaries" from source in order to generate C# libraries for the messages. (See https://github.com/adamdbrw/ros2_dotnet for more info.)
 
 
 Installing dependencies
