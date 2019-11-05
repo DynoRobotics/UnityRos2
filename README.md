@@ -58,7 +58,7 @@ Install Unity through Unity Hub
 https://forum.unity.com/threads/unity-hub-v-1-6-0-is-now-available.640792
 (the download link changes sometimes, so look at the newest posts)
 
-After downloading Unity Hub install Unity Editor follow this instruction https://docs.unity3d.com/Manual/GettingStartedInstallingHub.html When choosing a version, choose the latest stable one. During installation, wait until the blue line is complete.
+After downloading Unity Hub install Unity Editor. Follow this instruction https://docs.unity3d.com/Manual/GettingStartedInstallingHub.html When choosing a version, choose the latest stable one. During installation, wait until the blue line is complete.
 *NOTE: Tested with Unity 2019.2.8*
 
 Getting a Unity Project with ROS2 support
