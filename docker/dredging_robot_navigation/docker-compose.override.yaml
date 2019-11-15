@@ -5,4 +5,5 @@ services:
     volumes:
       - ./dredging_robot_bringup:/opt/app_ws/src/dredging_robot_bringup
       - ./dredging_robot_description:/opt/app_ws/src/dredging_robot_description
+
     # command: tail -f /dev/null

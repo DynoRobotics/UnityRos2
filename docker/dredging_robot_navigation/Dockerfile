@@ -38,6 +38,7 @@ RUN . $DEPENDENCIES_WS/install/setup.sh && \
 
 COPY dredging_robot_bringup src/dredging_robot_bringup
 COPY dredging_robot_description src/dredging_robot_description
+COPY nav2_navfn_planner src/nav2_navfn_planner
 
 RUN . $DEPENDENCIES_WS/install/setup.sh && \
      colcon build \
