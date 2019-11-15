@@ -23,7 +23,7 @@ If you are building this project from source you will probably need to install t
 To build from source you will also need .Net Core https://www.microsoft.com/net/learn/get-started. On Windows 10 I recommend installing .NET via Visual Studio 2017.
 
 Install Unity
-https://forum.unity.com/threads/unity-hub-v-1-5-0-is-now-available.627847/
+https://forum.unity.com/threads/unity-hub-v-1-0-0-is-now-available.555547/
 
 *NOTE: Tested with Unity 2019.2.6f1*
 
