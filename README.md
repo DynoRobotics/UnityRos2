@@ -134,3 +134,7 @@ Example Applications
 --------------------
 [![Sweepbot](https://img.youtube.com/vi/eMKbbEQhBTg/0.jpg)](https://www.youtube.com/watch?v=nggGs9ZIdlk)
 [![Package DropOff](https://img.youtube.com/vi/2is7kwPeydA/0.jpg)](https://www.youtube.com/watch?v=lptKRANOfCY)
+
+Troubleshooting
+---------------
+If the project crashes on startup using when the script, make sure you have not sourced any ROS2 workspace in the terminal already.
