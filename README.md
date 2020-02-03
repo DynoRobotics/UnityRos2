@@ -33,7 +33,7 @@ This script requires that you have docker installed on your system permissions s
 
 If you want some custom messages included in the prebuilt binaries, you are welcome to submit a pull request with a ROS2 package containing the interfaces/messages to https://github.com/DynoRobotics/rcldotnet_custom_interfaces
 
-To build custom messages yourself, you will need to add the packages containing them to https://github.com/samiamlabs/ros2_dotnet/blob/cyclone/ros2_dotnet_dashing.repos and https://github.com/samiamlabs/ros2_dotnet/blob/cyclone/rcldotnet_utils/rcldotnet_utils/create_unity_plugin.py before running the build script.
+To build custom messages yourself, you will need to add the packages containing them to https://github.com/samiamlabs/ros2_dotnet/blob/cyclone/ros2_dotnet_dashing.repos and https://github.com/samiamlabs/ros2_dotnet/blob/cyclone/rcldotnet_utils/rcldotnet_utils/create_unity_plugin.py before running the build script. Note that all the .so files needs to be set to preload at startup in Unity. (Can be selected in a checkbox in the "inspector" window)
 
 Features
 --------
