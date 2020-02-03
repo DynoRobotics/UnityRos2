@@ -1,0 +1,11 @@
+version: '3'
+
+services:
+  turtlebot3_unity:
+    network_mode: host
+    image: dynorobotics/turtlebot3_unity:dashing
+    tty: true
+    container_name: turtlebot3_unity
+    environment:
+      - RMW_IMPLEMENTATION=rmw_cyclonedds_cpp
+    command: ros2 launch turtlebot3_unity_bringup nav2_bringup_launch.py
